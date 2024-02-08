@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import LandPage from "./components/LandPage";
 
 const App = () => {
   return (
-    <div>
-      <p className='text-red-500'>This is a project in vite</p>
-    </div>
-  )
-}
-
-export default App
+    <>
+      <Routes>
+        <Route path="/" element={<LandPage></LandPage>}></Route>
+      </Routes>
+    </>
+  );
+};
+export default App;
