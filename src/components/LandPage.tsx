@@ -42,6 +42,46 @@ const LandPage = () => {
               the potential of your business.
             </span>
           </div>
+          {/*Enlighten texts display*/}
+          <div>
+            <div>
+              <p>Increase Visbility</p>
+              <span>
+                Having a website or web app makes it easier for individuals
+                surfing the web to easily identify your business. With billions
+                of internet users in the world, having a website allows you to
+                reach a larger audience and increase your online visibility.
+              </span>
+            </div>
+            <div>
+              <p>Professionalism and Credibility</p>
+              <span>
+                A well-designed website can make you look professional. This
+                sense of professionalism makes you a credible candidate to
+                potential clients. It creates a sense of legitimacy to your
+                customers.
+              </span>
+            </div>
+            <div>
+              <p>Marketting and Sales</p>
+              <span>
+                A website is an avenue to promote and showcase your products or
+                services for sale. This not only increases sales, but goes ahead
+                to increase your customer base. You can go further to show your
+                testimonials to potential clients to help increase the
+                credibility of your business.
+              </span>
+            </div>
+            <div>
+              <p>Customer Management</p>
+              <span>
+                A web app rightly designed can be a link between your business
+                and customers. There can be a regular interaction with
+                customers, as well as receiving feedbacks from them to help
+                build on your business.
+              </span>
+            </div>
+          </div>
         </main>
       </div>
     </>

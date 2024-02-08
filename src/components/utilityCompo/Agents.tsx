@@ -4,7 +4,7 @@ const Agents = () => {
   return (
     <>
       <div>
-        {/*Agent trust in Zeld */}
+        {/*Agent trust in Zeld images*/}
         <p>Trusted by most innovative companies</p>
         <img src="" alt="" />
         <img src="" alt="" />
