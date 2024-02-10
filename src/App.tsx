@@ -1,12 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import LandPage from "./components/LandPage";
+import { Landing } from "./components/components";
+import "./index.css";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<LandPage></LandPage>}></Route>
+        <Route path="/" element={<Landing></Landing>}></Route>
       </Routes>
     </>
   );

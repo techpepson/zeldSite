@@ -1,12 +1,28 @@
 import React from "react";
 import Header from "./utilityCompo/Header";
 import Agents from "./utilityCompo/Agents";
+import Stats from "./utilityCompo/Stats";
+import Button from "./utilityCompo/Button";
+import { icons } from "../../public/utilityImg/icons";
+import {
+  html,
+  codeBug,
+  securityImg,
+  credibleImg,
+  cctv,
+  codeImg,
+  saleImg,
+  commandPrompt,
+  barGraph,
+} from "../../public/LandImg/landImg";
 
-const LandPage = () => {
+const LandPage: React.FC = () => {
   return (
     <>
       <div>
-        <Header />
+        <header>
+          <Header />
+        </header>
         {/*Beginnig of the main body of the page*/}
         <main>
           <div>
@@ -21,11 +37,37 @@ const LandPage = () => {
               <mark>Where Zeld calls, quality responds.</mark>
             </div>
             {/*Floating images*/}
-            <div></div>
+            <div>
+              <img
+                src={html}
+                alt="An html tag image to show we are into web dev."
+              />
+              <img
+                src={codeBug}
+                alt="A code bug image to show we create bug-free web apps."
+              />
+              <img
+                src={securityImg}
+                alt="A security key image to show we create high security applications."
+              />
+              <img
+                src={credibleImg}
+                alt="A sign of our credibilty with a credible image."
+              />
+            </div>
             <button type="button">Get Started</button>
           </div>
           {/*Images to briefly introduce our services*/}
-          <div></div>
+          <div>
+            <img
+              src={cctv}
+              alt="A cctv image to show our expertise in cctv services."
+            />
+            <img src={codeImg} alt="An image of a computer code." />
+            <img src={saleImg} alt="A sale image to show we also do sales." />
+            <img src={commandPrompt} alt="An image of a command prompt." />
+            <img src={barGraph} alt="An image of a command prompt." />
+          </div>
           {/*Agent trusts in Zeld */}
           <Agents />
           <div>
@@ -44,7 +86,7 @@ const LandPage = () => {
           </div>
           {/*Enlighten texts display*/}
           <div>
-            <div>
+            <div className="text-blue-500 bg-[url(public/LandImg/barGraph.jpg)]">
               <p>Increase Visbility</p>
               <span>
                 Having a website or web app makes it easier for individuals
@@ -53,7 +95,7 @@ const LandPage = () => {
                 reach a larger audience and increase your online visibility.
               </span>
             </div>
-            <div>
+            <div className="bg-[url(public/LandImg/credibleImg.jpg)]">
               <p>Professionalism and Credibility</p>
               <span>
                 A well-designed website can make you look professional. This
@@ -82,7 +124,67 @@ const LandPage = () => {
               </span>
             </div>
           </div>
+          <div>
+            <p>Transforming dreams into Powerful Solutions</p>
+            <span>
+              With our expertise and dedication, we are committed to delivering
+              exceptional services that meet your unique needs.
+            </span>
+          </div>
+          <div>
+            <Stats />
+          </div>
+          <div>
+            <div>
+              <p>Our Pride as Zeld</p>
+              <span>
+                We pride ourseld on being the go-to partner for your business
+                that requires top-notch technological services.
+              </span>
+              {/*Utility class for the button*/}
+              <Button />
+            </div>
+            <div>
+              <p>Quality and Attention to Detail</p>
+              <span>
+                We carefully pay attention to the requests of clients to make
+                sure the exact requirement from the client is provided. With
+                this, we at Zeld will see to it that exactly what the user
+                requests is provided, while paying attention to quality. Trust
+                Zeld to handle your diverse development with the use of best and
+                quality tools as well as industry best practices.
+              </span>
+            </div>
+            <div>
+              <p>Expertise and Experience</p>
+              <p>
+                Zeld is credited with experience and expertise in the space of
+                technology. We are a company providing diverse services from web
+                development, mobile application development, cctv installations
+                and repairs as well sales of electronics.
+                <span>When you want quality, speak Zeld.</span>
+              </p>
+            </div>
+            <div>
+              <p>Communication and Support</p>
+              <span>
+                Zeld greatly has customers at heart and we not only run the
+                company, but constantly take the concerns of our clients. You
+                can logde complaints, make suggestions as well contact customer
+                support to get all your issues addressed.
+                <span>
+                  <a href="#">Support</a>
+                </span>
+              </span>
+            </div>
+          </div>
         </main>
+        <div>
+          <p>It takes an eye blink to be on the web with Zeld.</p>
+          <span>
+            <Button />
+          </span>
+        </div>
       </div>
     </>
   );

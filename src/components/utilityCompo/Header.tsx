@@ -1,6 +1,7 @@
 import React from "react";
-
-const Header = () => {
+import { icons } from "../../../public/utilityImg/icons";
+import Button from "./Button";
+const Header: React.FC = () => {
   return (
     <>
       <div>
@@ -16,9 +17,11 @@ const Header = () => {
                 <p>Testimonials</p>
                 <p>Meet our Clients</p>
               </div>
-              <p>Connect With Us</p>
-              <img src="" alt="" />
+              <Button />
               {/*Sun icon to toggle light and dark mode*/}
+              <button type="button" className={`font-normal`}>
+                {icons.moonIcon}
+              </button>
             </div>
           </nav>
         </header>
