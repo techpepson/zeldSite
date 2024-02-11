@@ -3,70 +3,83 @@ import Header from "./utilityCompo/Header";
 import Agents from "./utilityCompo/Agents";
 import Stats from "./utilityCompo/Stats";
 import Button from "./utilityCompo/Button";
-import { icons } from "../../public/utilityImg/icons";
+import "../styles/utilityStyles/landPageStyles.css";
+import { landImages } from "../styles/compoStyles/LandStyles/landHeader";
+import {
+  headerStyles,
+  landPageStyles,
+} from "../styles/compoStyles/LandStyles/landHeader";
 import {
   html,
   codeBug,
   securityImg,
   credibleImg,
-  cctv,
-  codeImg,
-  saleImg,
-  commandPrompt,
-  barGraph,
 } from "../../public/LandImg/landImg";
 
 const LandPage: React.FC = () => {
   return (
     <>
-      <div>
+      <div className={`${headerStyles.centerBody}`}>
         <header>
           <Header />
         </header>
         {/*Beginnig of the main body of the page*/}
         <main>
-          <div>
-            <div>
-              <p>Here to make you stand out from your business competitors.</p>
-              <span>
+          <div className="mt-10 relative">
+            <div className={`${landPageStyles.centerText}`}>
+              <p className={`${landPageStyles.largeText}`}>
+                <span>Make your business</span> <br />
+                <span>stand out from competitors.</span>
+              </p>
+              <span className={`${landPageStyles.centerParagraph} mt-5 mb-1`}>
                 Partner with Zeld to get your business to the web with the
                 design of high performing and robust websites and webapps to
                 stay ahead of your competitors. For extra technological
                 services, depend on as as well.
               </span>
-              <mark>Where Zeld calls, quality responds.</mark>
+              <span className={`${landPageStyles.mediumText}`}>
+                Where Zeld calls, quality responds.
+              </span>
             </div>
             {/*Floating images*/}
             <div>
               <img
                 src={html}
                 alt="An html tag image to show we are into web dev."
+                className={`${landPageStyles.roundImage} absolute top-0 left-0 mt-4 ml-4 max-sm:mt-0 max-sm:ml-0`}
               />
               <img
                 src={codeBug}
                 alt="A code bug image to show we create bug-free web apps."
+                className={`${landPageStyles.roundImage} absolute top-0 right-0 mt-4 mr-4 max-sm:mt-0 max-sm:mr-0`}
               />
               <img
                 src={securityImg}
                 alt="A security key image to show we create high security applications."
+                className={`${landPageStyles.roundImage} absolute bottom-0 left-0 mb-4 ml-4 max-sm:mb-0 max-sm:ml-0`}
               />
               <img
                 src={credibleImg}
                 alt="A sign of our credibilty with a credible image."
+                className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-4 max-sm:mb-0 max-sm:mr-0`}
               />
             </div>
-            <button type="button">Get Started</button>
+            <a href="#" className={`${landPageStyles.buttonStyle}`}>
+              <button type="button" title="Click to make a request">
+                Get Started
+              </button>
+            </a>
           </div>
           {/*Images to briefly introduce our services*/}
-          <div>
-            <img
-              src={cctv}
-              alt="A cctv image to show our expertise in cctv services."
-            />
-            <img src={codeImg} alt="An image of a computer code." />
-            <img src={saleImg} alt="A sale image to show we also do sales." />
-            <img src={commandPrompt} alt="An image of a command prompt." />
-            <img src={barGraph} alt="An image of a command prompt." />
+          <div className={`${landPageStyles.landWorks}`}>
+            {landImages.map((image, index) => (
+              <img
+                src={image.src}
+                alt="Images of our works"
+                key={index}
+                className={`${landPageStyles.landWorksImg} rounded-md`}
+              />
+            ))}
           </div>
           {/*Agent trusts in Zeld */}
           <Agents />
@@ -86,7 +99,7 @@ const LandPage: React.FC = () => {
           </div>
           {/*Enlighten texts display*/}
           <div>
-            <div className="text-blue-500 bg-[url(public/LandImg/barGraph.jpg)]">
+            <div>
               <p>Increase Visbility</p>
               <span>
                 Having a website or web app makes it easier for individuals

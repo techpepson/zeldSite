@@ -16,19 +16,19 @@ const Stats: React.FC = () => {
         </div>
         <div>
           <div>
-            {stats.products}
+            {`${stats.products}+ `}
             <span>Products Built</span>
           </div>
           <div>
-            {stats.clients}
+            {`${stats.clients}+ `}
             <span>Happy Cleints</span>
           </div>
           <div>
-            {stats.developers}
+            {`${stats.developers}+ `}
             <span>Creative People</span>
           </div>
           <div>
-            {stats.years}
+            {`${stats.years}+ `}
             <span>Years of Experience</span>
           </div>
         </div>

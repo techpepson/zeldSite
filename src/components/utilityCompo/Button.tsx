@@ -1,15 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const Button = () => {
+const Button: React.FC = () => {
   return (
     <>
       <div>
-        <button>
-          <a href="#">Get Started</a>
-        </button>
+        <a href="#">
+          <button type="button" title="Click to make a request">
+            Get Started
+          </button>
+        </a>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
