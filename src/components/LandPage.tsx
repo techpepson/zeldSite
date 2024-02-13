@@ -14,6 +14,7 @@ import {
   codeBug,
   securityImg,
   credibleImg,
+  codeImg,
 } from "../../public/LandImg/landImg";
 
 const LandPage: React.FC = () => {
@@ -83,67 +84,96 @@ const LandPage: React.FC = () => {
           </div>
           {/*Agent trusts in Zeld */}
           <Agents />
-          <div>
+          <div className={`${landPageStyles.benefitStyle} mb-7`}>
             {/*Blog about e-business*/}
-            <a href="#">Benefits of having a website as a business</a>
+            <a href="#" className="">
+              <button type="button" title="Click to read more">
+                Benefits of having a website as a business
+              </button>
+            </a>
           </div>
-          <div>
+          <div className={`${landPageStyles.centerText}`}>
             {/*Attention texts*/}
-            <p>Unveil the implicit potential of your business</p>
-            <span>
-              With the increasing use of websites by individuals, transitioning
-              your business into an online business by getting a robust and high
-              performing web app or website is the starting step to unleashing
-              the potential of your business.
+            <p className={`${landPageStyles.bottomTextSize}`}>
+              Unveil the potential of your business
+            </p>
+            <span className={`${landPageStyles.smallText}`}>
+              A website is the first point of contact for potential customers{" "}
+              <br />
+              availing to them valuable information and creating a lasting
+              impression.
             </span>
           </div>
           {/*Enlighten texts display*/}
-          <div>
-            <div>
-              <p>Increase Visbility</p>
-              <span>
+          <div className={`${landPageStyles.gridStyles} grid gap-5`}>
+            <div
+              className={`bg-[url(public/landImg/globe2.avif)] ${landPageStyles.bgStyles} bg-top`}
+            >
+              <p className={`${landPageStyles.mediumTextLeft}`}>
+                Increase Visbility
+              </p>
+              <p className={`${landPageStyles.smallText}`}>
                 Having a website or web app makes it easier for individuals
                 surfing the web to easily identify your business. With billions
                 of internet users in the world, having a website allows you to
                 reach a larger audience and increase your online visibility.
-              </span>
+              </p>
             </div>
-            <div className="bg-[url(public/LandImg/credibleImg.jpg)]">
-              <p>Professionalism and Credibility</p>
-              <span>
+            <div
+              className={`bg-[url(public/landImg/credibleImg.jpg)] ${landPageStyles.bgStyles}`}
+            >
+              <p className={`${landPageStyles.mediumTextLeft}`}>
+                Professionalism and Credibility
+              </p>
+              <p className={`${landPageStyles.smallText}`}>
                 A well-designed website can make you look professional. This
                 sense of professionalism makes you a credible candidate to
                 potential clients. It creates a sense of legitimacy to your
                 customers.
-              </span>
+              </p>
             </div>
-            <div>
-              <p>Marketting and Sales</p>
-              <span>
+            <div
+              className={`bg-[url(public/landImg/bar.jpg)] ${landPageStyles.bgStyles}`}
+            >
+              <p className={`${landPageStyles.mediumTextLeft}`}>
+                Marketting and Sales
+              </p>
+              <p className={`${landPageStyles.smallText}`}>
                 A website is an avenue to promote and showcase your products or
                 services for sale. This not only increases sales, but goes ahead
                 to increase your customer base. You can go further to show your
                 testimonials to potential clients to help increase the
                 credibility of your business.
-              </span>
+              </p>
             </div>
-            <div>
-              <p>Customer Management</p>
-              <span>
+            <div
+              className={`bg-[url(public/landImg/customer.jpg)] ${landPageStyles.bgStyles} bg-left-bottom`}
+            >
+              <p className={`${landPageStyles.mediumTextLeft}`}>
+                Customer Management
+              </p>
+              <p className={`${landPageStyles.smallText}`}>
                 A web app rightly designed can be a link between your business
                 and customers. There can be a regular interaction with
                 customers, as well as receiving feedbacks from them to help
                 build on your business.
-              </span>
+              </p>
             </div>
           </div>
-          <div>
-            <p>Transforming dreams into Powerful Solutions</p>
-            <span>
+          {/*Transforming ideas section*/}
+          <div
+            className={`${landPageStyles.centerText} mt-10 max-[155px]:mt-24`}
+          >
+            <p className={`${landPageStyles.bottomTextSize} text-wrap`}>
+              Transforming dreams into <br className={`max-[770px]:hidden`} />{" "}
+              Powerful Solutions
+            </p>
+            <span className={`${landPageStyles.smallText}`}>
               With our expertise and dedication, we are committed to delivering
               exceptional services that meet your unique needs.
             </span>
           </div>
+          {/*Statistics section*/}
           <div>
             <Stats />
           </div>
