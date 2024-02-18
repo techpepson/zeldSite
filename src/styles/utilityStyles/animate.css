@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*This is the utility styles which include styles like animations for certain buttons and images*/
+
+.oscillate-animation {
+  animation: oscillate-animation ease-in-out 5s infinite;
+}
+
+.beep {
+  animation: beep ease-in-out 5s infinite;
+}
+
+@keyframes oscillate-animation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate3D(-360deg);
+  }
+}
+
+@keyframes beep {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateZ(10%);
+  }
+}

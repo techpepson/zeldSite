@@ -5,6 +5,7 @@ import Button from "./utilityCompo/Button";
 import "../styles/utilityStyles/landPageStyles.css";
 import { landImages } from "../styles/compoStyles/LandStyles/landHeader";
 import { Link } from "react-router-dom";
+import "../styles/utilityStyles/animate.css";
 import {
   headerStyles,
   landPageStyles,
@@ -43,22 +44,22 @@ const LandPage: React.FC = () => {
               <img
                 src={html}
                 alt="An html tag image to show we are into web dev."
-                className={`${landPageStyles.roundImage} absolute top-0 left-0 mt-4 ml-4 max-sm:mt-0 max-sm:ml-0`}
+                className={`${landPageStyles.roundImage} absolute top-0 left-0 mt-4 ml-4 max-sm:mt-0 max-sm:ml-0 oscillate-animation`}
               />
               <img
                 src={codeBug}
                 alt="A code bug image to show we create bug-free web apps."
-                className={`${landPageStyles.roundImage} absolute top-0 right-0 mt-4 mr-4 max-sm:mt-0 max-sm:mr-0`}
+                className={`${landPageStyles.roundImage} absolute top-0 right-0 mt-4 mr-4 max-sm:mt-0 max-sm:mr-0 oscillate-animation`}
               />
               <img
                 src={securityImg}
                 alt="A security key image to show we create high security applications."
-                className={`${landPageStyles.roundImage} absolute bottom-0 left-0 mb-4 ml-4 max-sm:mb-0 max-sm:ml-0`}
+                className={`${landPageStyles.roundImage} absolute bottom-0 left-0 mb-4 ml-4 max-sm:mb-0 max-sm:ml-0 oscillate-animation`}
               />
               <img
                 src={credibleImg}
                 alt="A sign of our credibilty with a credible image."
-                className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-4 max-sm:mb-0 max-sm:mr-0`}
+                className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-4 max-sm:mb-0 max-sm:mr-0 oscillate-animation`}
               />
             </div>
             <Link to="#" className={`${landPageStyles.buttonStyle}`}>
