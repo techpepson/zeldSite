@@ -49,7 +49,7 @@ const LandPage: React.FC = () => {
               <img
                 src={codeBug}
                 alt="A code bug image to show we create bug-free web apps."
-                className={`${landPageStyles.roundImage} absolute top-0 right-0 mt-4 mr-4 max-sm:mt-0 max-sm:mr-0 oscillate-animation`}
+                className={`${landPageStyles.roundImage} absolute top-0 right-0 mt-5 mr-0 max-sm:mt-0 max-sm:mr-5 oscillate-animation`}
               />
               <img
                 src={securityImg}
@@ -59,7 +59,7 @@ const LandPage: React.FC = () => {
               <img
                 src={credibleImg}
                 alt="A sign of our credibilty with a credible image."
-                className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-4 max-sm:mb-0 max-sm:mr-0 oscillate-animation`}
+                className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-2 max-sm:mb-0 max-sm:mr-5 oscillate-animation`}
               />
             </div>
             <Link to="#" className={`${landPageStyles.buttonStyle}`}>

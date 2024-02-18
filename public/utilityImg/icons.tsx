@@ -218,12 +218,7 @@ export const icons = {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="m4.5 18.75 7.5-7.5 7.5 7.5"
-      />
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="m4.5 12.75 7.5-7.5 7.5 7.5"
+        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
       />
     </svg>
   ),

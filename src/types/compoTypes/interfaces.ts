@@ -8,7 +8,8 @@ export interface headerTypes {
     absoluteHeader: string,
     hideBars: string,
     rightNavs: string,
-    hideCol: string
+    hideCol: string,
+    scrollStyles: string
 }
 
 export interface landPageStylesInt {

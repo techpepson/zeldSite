@@ -11,6 +11,8 @@ export const headerStyles: headerTypes = {
     centerBody: `relative container`,
     hideBars: `md:hidden mt-5`,
     rightNavs: `flex justify-end flex`,
+    scrollStyles: `fixed right-0 top-[50%] z-[999]`,
+    scrollUp: ``
     // absoluteHeader: `max-md:absolute`,
 }
 
@@ -23,7 +25,7 @@ export const landPageStyles: landPageStylesInt = {
     mediumTextLeft: `md:text-2xl max-sm:text-xl max-[360px]:text-xl mb-2 align-middle`,
     bottomTextSize: `md:text-4xl max-sm:text-2xl text-2xl text-center max-[154px]:mt-10`,
     centerParagraph: `text-center max-w-max`,
-    roundImage: `w-[3rem] h-[3rem] rounded-full max-[360px]:w-[2rem] max-[360px]:h-[2rem] max-[320px]:hidden`,
+    roundImage: `w-[2.5rem] h-[2.5rem] rounded-full max-[360px]:w-[1.5rem] max-[360px]:h-[1.5rem] max-[320px]:hidden`,
     buttonStyle: `flex justify-center items-center text-md mt-4`,
     benefitStyle: `flex  justify-center items-center text-sm mt-4 border rounded-full`,
     landWorks: `flex gap-5 flex-wrap items-center justify-center mt-10 max-w-auto`,
