@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { icons } from "../../../public/utilityImg/icons";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { headers } from "../../styles/compoStyles/LandStyles/landHeader";
 import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 const Header: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
               >
                 <p className="text-3xl max-md:hidden">Zeld Technologies</p>
                 <div
-                  className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs}`}
+                  className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs} text__color`}
                 >
                   {/*Navigation Links*/}
                   <Link to="#">

@@ -30,7 +30,7 @@ export const landPageStyles: landPageStylesInt = {
     benefitStyle: `flex  justify-center items-center text-sm mt-4 border rounded-full`,
     landWorks: `flex gap-5 flex-wrap items-center justify-center mt-10 max-w-auto`,
     landWorksImg: `flex w-[20rem] h-[20rem] rounded-md`,
-    bgStyles: `bg-no-repeat bg-blend-multiply h-[200px] w-auto bg-right-top`,
+    bgStyles: `bg-no-repeat bg-blend-multiply h-[200px] w-auto`,
     gridStyles: `mt-20 grid grid-cols-2 max-sm:grid-cols-1`,
     statsStyles: `flex flex-col text-center items-center`,
     statsStylesRow: `grid text-center grid-cols-2 max-sm:grid-cols-1 max-sm:gap-5 gap-3`,

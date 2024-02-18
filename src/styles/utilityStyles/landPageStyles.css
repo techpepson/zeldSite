@@ -1,9 +1,67 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-img{
-    width: 3rem;
-    border-radius: 50%;
-    height: 3rem;
-} */
+/*This is the styling for the colors of the page.*/
+
+:root {
+  --text-color: #031f41;
+  --text-size: 5rem;
+}
+
+.text__blue-pink {
+  background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text__blue-fuchisa {
+  background-image: linear-gradient(360deg, #d946ef, #2e1065, #db2777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.button__background {
+  background-image: linear-gradient(50deg, #0677ac, #4a044e);
+  color: #f3e8ff;
+}
+
+.text__color {
+  color: var(--text-color);
+}
+
+.special__button {
+  background-color: #fbbf24;
+}
+
+.unique__text {
+  background-image: linear-gradient(30deg, #ca8a04, #082f49, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mix-blend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
+  mix-blend-mode: multiply;
+}
+.mix-blends::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(30deg, #f7f5f5, #1e1b4b, #ee0e73);
+  opacity: 0.3;
+  background-position: center;
+  mix-blend-mode: multiply;
+}

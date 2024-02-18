@@ -20,14 +20,23 @@ import {
 const LandPage: React.FC = () => {
   return (
     <>
-      <div className={`${headerStyles.centerBody}`}>
+      <div className={`${headerStyles.centerBody} bg-img`}>
         {/*Beginnig of the main body of the page*/}
         <main>
           <div className="mt-10 relative">
             <div className={`${landPageStyles.centerText}`}>
-              <p className={`${landPageStyles.largeText}`}>
-                <span>Make your business</span> <br />
-                <span>stand out from competitors.</span>
+              <p className={`${landPageStyles.largeText} font-serif`}>
+                <span>
+                  Make your <span className="text__blue-pink">business</span>
+                </span>{" "}
+                <br />
+                <span>
+                  <span className="text__blue-fuchisa">stand</span> out from{" "}
+                  <span className="text__blue-fuchisa font-serif">
+                    competitors
+                  </span>
+                  .
+                </span>
               </p>
               <span className={`${landPageStyles.centerParagraph} mt-5 mb-1`}>
                 Partner with Zeld to get your business to the web with the
@@ -36,7 +45,8 @@ const LandPage: React.FC = () => {
                 services, depend on as as well.
               </span>
               <span className={`${landPageStyles.mediumText}`}>
-                Where Zeld calls, quality responds.
+                <span className="unique__text">Where Zeld calls</span>,{" "}
+                <span className="text__blue-pink">quality responds</span>.
               </span>
             </div>
             {/*Floating images*/}
@@ -63,9 +73,7 @@ const LandPage: React.FC = () => {
               />
             </div>
             <Link to="#" className={`${landPageStyles.buttonStyle}`}>
-              <button type="button" title="Click to make a request">
-                Get Started
-              </button>
+              <Button />
             </Link>
           </div>
           {/*Images to briefly introduce our services*/}
@@ -92,7 +100,8 @@ const LandPage: React.FC = () => {
           <div className={`${landPageStyles.centerText}`}>
             {/*Attention texts*/}
             <p className={`${landPageStyles.bottomTextSize}`}>
-              Unveil the potential of your business
+              <span className="text__blue-pink">Unveil</span> the potential of
+              your <span className="unique__text">business</span>
             </p>
             <span className={`${landPageStyles.smallText}`}>
               A website is the first point of contact for potential customers{" "}
@@ -102,59 +111,74 @@ const LandPage: React.FC = () => {
             </span>
           </div>
           {/*Enlighten texts display*/}
-          <div className={`${landPageStyles.gridStyles} grid gap-5`}>
+          <div className={`${landPageStyles.gridStyles} grid gap-5 relative`}>
             <div
-              className={`bg-[url(public/landImg/globe2.avif)] ${landPageStyles.bgStyles} bg-top`}
+              className={`bg-[url(public/landImg/globe2.avif)] ${landPageStyles.bgStyles} bg-top relative`}
             >
-              <p className={`${landPageStyles.mediumTextLeft}`}>
-                Increase Visbility
-              </p>
-              <p className={`${landPageStyles.smallText}`}>
-                Having a website or web app makes it easier for individuals
-                surfing the web to easily identify your business. With billions
-                of internet users in the world, having a website allows you to
-                reach a larger audience and increase your online visibility.
-              </p>
+              <div className="mix-blends">
+                <p className={`${landPageStyles.mediumTextLeft}`}>
+                  <span className="text__blue-pink">Increase Visbility</span>
+                </p>
+                <p className={`${landPageStyles.smallText} text-white`}>
+                  Having a website or web app makes it easier for individuals
+                  surfing the web to easily identify your business. With
+                  billions of internet users in the world, having a website
+                  allows you to reach a larger audience and increase your online
+                  visibility.
+                </p>
+              </div>
             </div>
             <div
-              className={`bg-[url(public/landImg/credibleImg.jpg)] ${landPageStyles.bgStyles}`}
+              className={`bg-[url(public/landImg/credibleImg.jpg)] ${landPageStyles.bgStyles} relative`}
             >
-              <p className={`${landPageStyles.mediumTextLeft}`}>
-                Professionalism and Credibility
-              </p>
-              <p className={`${landPageStyles.smallText}`}>
-                A well-designed website can make you look professional. This
-                sense of professionalism makes you a credible candidate to
-                potential clients. It creates a sense of legitimacy to your
-                customers.
-              </p>
+              <div className="mix-blends">
+                <p
+                  className={`${landPageStyles.mediumTextLeft} text__blue-pink`}
+                >
+                  Professionalism and Credibility
+                </p>
+                <p className={`${landPageStyles.smallText}`}>
+                  A well-designed website can make you look professional. This
+                  sense of professionalism makes you a credible candidate to
+                  potential clients. It creates a sense of legitimacy to your
+                  customers.
+                </p>
+              </div>
             </div>
             <div
-              className={`bg-[url(public/landImg/bar.jpg)] ${landPageStyles.bgStyles}`}
+              className={`bg-[url(public/landImg/bar.jpg)] ${landPageStyles.bgStyles} relative`}
             >
-              <p className={`${landPageStyles.mediumTextLeft}`}>
-                Marketting and Sales
-              </p>
-              <p className={`${landPageStyles.smallText}`}>
-                A website is an avenue to promote and showcase your products or
-                services for sale. This not only increases sales, but goes ahead
-                to increase your customer base. You can go further to show your
-                testimonials to potential clients to help increase the
-                credibility of your business.
-              </p>
+              <div className="mix-blends">
+                <p
+                  className={`${landPageStyles.mediumTextLeft} text__blue-pink`}
+                >
+                  Marketting and Sales
+                </p>
+                <p className={`${landPageStyles.smallText}`}>
+                  A website is an avenue to promote and showcase your products
+                  or services for sale. This not only increases sales, but goes
+                  ahead to increase your customer base. You can go further to
+                  show your testimonials to potential clients to help increase
+                  the credibility of your business.
+                </p>
+              </div>
             </div>
             <div
-              className={`bg-[url(public/landImg/customer.jpg)] ${landPageStyles.bgStyles} bg-left-bottom`}
+              className={`relative bg-[url(public/landImg/customerMan.avif)] ${landPageStyles.bgStyles} bg-left-bottom`}
             >
-              <p className={`${landPageStyles.mediumTextLeft}`}>
-                Customer Management
-              </p>
-              <p className={`${landPageStyles.smallText}`}>
-                A web app rightly designed can be a link between your business
-                and customers. There can be a regular interaction with
-                customers, as well as receiving feedbacks from them to help
-                build on your business.
-              </p>
+              <div className="mix-blends">
+                <p
+                  className={`${landPageStyles.mediumTextLeft} text__blue-pink`}
+                >
+                  Customer Management
+                </p>
+                <p className={`${landPageStyles.smallText} text-white`}>
+                  A web app rightly designed can be a link between your business
+                  and customers. There can be a regular interaction with
+                  customers, as well as receiving feedbacks from them to help
+                  build on your business.
+                </p>
+              </div>
             </div>
           </div>
           {/*Transforming ideas section*/}
@@ -162,13 +186,13 @@ const LandPage: React.FC = () => {
             className={`${landPageStyles.centerText} mt-10 max-[155px]:mt-24`}
           >
             <p className={`${landPageStyles.bottomTextSize} text-wrap`}>
-              Transforming dreams into{" "}
+              <span className="unique__text">Transforming</span> dreams into
               <br
                 className={`${landPageStyles.lineBreakStyles} ${landPageStyles.lineBreakStyles}`}
               />{" "}
-              Powerful Solutions
+              <span className="text__blue-pink">Powerful Solutions</span>
             </p>
-            <span className={`${landPageStyles.smallText}`}>
+            <span className={`${landPageStyles.smallText} text__color`}>
               With our expertise and dedication, we are committed to delivering
               exceptional services that meet your unique needs.
             </span>
@@ -180,18 +204,23 @@ const LandPage: React.FC = () => {
           <div className={`${landPageStyles.statsStylesRow} mt-10`}>
             <div>
               <p className={`${landPageStyles.mediumText}`}>
-                Our Pride as Zeld
+                <span className="text__blue-pink text-2xl">Our Pride</span>{" "}
+                <span className="unique__text">as Zeld</span>
               </p>
               <span>
                 We pride ourseld on being the go-to partner for your business
                 that requires top-notch technological services.
               </span>
               {/*Utility class for the button*/}
-              <Button />
+              <div className="mt-5">
+                <Button />
+              </div>
             </div>
             <div>
               <p className={`${landPageStyles.mediumText}`}>
-                Quality and Attention to Detail
+                <span className="text__blue-pink">
+                  Quality and Attention to Details
+                </span>
               </p>
               <span>
                 We carefully pay attention to the requests of clients to make
@@ -204,7 +233,9 @@ const LandPage: React.FC = () => {
             </div>
             <div>
               <p className={`${landPageStyles.mediumText}`}>
-                Expertise and Experience
+                <span className="text__blue-pink">
+                  Expertise and Experience
+                </span>
               </p>
               <p>
                 Zeld is credited with experience and expertise in the space of
@@ -216,9 +247,11 @@ const LandPage: React.FC = () => {
             </div>
             <div>
               <p className={`${landPageStyles.mediumText}`}>
-                Communication and Support
+                <span className="text__blue-pink">
+                  Communication and Support
+                </span>
               </p>
-              <span>
+              <span className="text__color">
                 Zeld greatly has customers at heart and we not only run the
                 company, but constantly take the concerns of our clients. You
                 can logde complaints, make suggestions as well contact customer
@@ -232,13 +265,13 @@ const LandPage: React.FC = () => {
           {/*Bottom section to boost clients*/}
           <div className={`${landPageStyles.centerText} mt-10`}>
             <p className={`${landPageStyles.largeText}`}>
-              It takes an eye blink{" "}
-              <br className={`${landPageStyles.lineBreakStyles}`} /> to be on
-              the web with Zeld.
+              <span className="text__blue-pink">It takes an eye blink</span>
+              <br className={`${landPageStyles.lineBreakStyles}`} />{" "}
+              <span className="unique__text">to be on the web with Zeld.</span>
             </p>
-            <span>
+            <div className="mt-5">
               <Button />
-            </span>
+            </div>
           </div>
         </main>
         <footer></footer>
