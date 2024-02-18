@@ -1,9 +1,14 @@
 export interface headerTypes {
     logoStyles: string,
     buttonStyles: string,
+    buttonStylesCol: string,
     headerStyle: string,
+    headerStyleCol: string,
     centerBody: string,
-    hideHeader: string
+    absoluteHeader: string,
+    hideBars: string,
+    rightNavs: string,
+    hideCol: string
 }
 
 export interface landPageStylesInt {
@@ -24,7 +29,8 @@ export interface landPageStylesInt {
     gridStyles: string,
     statsStyles: string,
     statsStylesRow: string,
-    statsStylesContainer: string
+    statsStylesContainer: string,
+    lineBreakStyles: string
 }
 export interface landImagesInt {
     image: string,

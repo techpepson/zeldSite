@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./utilityCompo/Header";
 import Agents from "./utilityCompo/Agents";
 import Stats from "./utilityCompo/Stats";
 import Button from "./utilityCompo/Button";
 import "../styles/utilityStyles/landPageStyles.css";
 import { landImages } from "../styles/compoStyles/LandStyles/landHeader";
+import { Link } from "react-router-dom";
 import {
   headerStyles,
   landPageStyles,
@@ -14,16 +14,12 @@ import {
   codeBug,
   securityImg,
   credibleImg,
-  codeImg,
 } from "../../public/LandImg/landImg";
 
 const LandPage: React.FC = () => {
   return (
     <>
       <div className={`${headerStyles.centerBody}`}>
-        <header>
-          <Header />
-        </header>
         {/*Beginnig of the main body of the page*/}
         <main>
           <div className="mt-10 relative">
@@ -65,11 +61,11 @@ const LandPage: React.FC = () => {
                 className={`${landPageStyles.roundImage} absolute bottom-0 right-0 mb-4 mr-4 max-sm:mb-0 max-sm:mr-0`}
               />
             </div>
-            <a href="#" className={`${landPageStyles.buttonStyle}`}>
+            <Link to="#" className={`${landPageStyles.buttonStyle}`}>
               <button type="button" title="Click to make a request">
                 Get Started
               </button>
-            </a>
+            </Link>
           </div>
           {/*Images to briefly introduce our services*/}
           <div className={`${landPageStyles.landWorks}`}>
@@ -86,11 +82,11 @@ const LandPage: React.FC = () => {
           <Agents />
           <div className={`${landPageStyles.benefitStyle} mb-7`}>
             {/*Blog about e-business*/}
-            <a href="#" className="">
+            <Link to="#" className="">
               <button type="button" title="Click to read more">
                 Benefits of having a website as a business
               </button>
-            </a>
+            </Link>
           </div>
           <div className={`${landPageStyles.centerText}`}>
             {/*Attention texts*/}
@@ -165,7 +161,10 @@ const LandPage: React.FC = () => {
             className={`${landPageStyles.centerText} mt-10 max-[155px]:mt-24`}
           >
             <p className={`${landPageStyles.bottomTextSize} text-wrap`}>
-              Transforming dreams into <br className={`max-[770px]:hidden`} />{" "}
+              Transforming dreams into{" "}
+              <br
+                className={`${landPageStyles.lineBreakStyles} ${landPageStyles.lineBreakStyles}`}
+              />{" "}
               Powerful Solutions
             </p>
             <span className={`${landPageStyles.smallText}`}>
@@ -177,9 +176,11 @@ const LandPage: React.FC = () => {
           <div>
             <Stats />
           </div>
-          <div>
+          <div className={`${landPageStyles.statsStylesRow} mt-10`}>
             <div>
-              <p>Our Pride as Zeld</p>
+              <p className={`${landPageStyles.mediumText}`}>
+                Our Pride as Zeld
+              </p>
               <span>
                 We pride ourseld on being the go-to partner for your business
                 that requires top-notch technological services.
@@ -188,7 +189,9 @@ const LandPage: React.FC = () => {
               <Button />
             </div>
             <div>
-              <p>Quality and Attention to Detail</p>
+              <p className={`${landPageStyles.mediumText}`}>
+                Quality and Attention to Detail
+              </p>
               <span>
                 We carefully pay attention to the requests of clients to make
                 sure the exact requirement from the client is provided. With
@@ -199,7 +202,9 @@ const LandPage: React.FC = () => {
               </span>
             </div>
             <div>
-              <p>Expertise and Experience</p>
+              <p className={`${landPageStyles.mediumText}`}>
+                Expertise and Experience
+              </p>
               <p>
                 Zeld is credited with experience and expertise in the space of
                 technology. We are a company providing diverse services from web
@@ -209,7 +214,9 @@ const LandPage: React.FC = () => {
               </p>
             </div>
             <div>
-              <p>Communication and Support</p>
+              <p className={`${landPageStyles.mediumText}`}>
+                Communication and Support
+              </p>
               <span>
                 Zeld greatly has customers at heart and we not only run the
                 company, but constantly take the concerns of our clients. You
@@ -221,13 +228,19 @@ const LandPage: React.FC = () => {
               </span>
             </div>
           </div>
+          {/*Bottom section to boost clients*/}
+          <div className={`${landPageStyles.centerText} mt-10`}>
+            <p className={`${landPageStyles.largeText}`}>
+              It takes an eye blink{" "}
+              <br className={`${landPageStyles.lineBreakStyles}`} /> to be on
+              the web with Zeld.
+            </p>
+            <span>
+              <Button />
+            </span>
+          </div>
         </main>
-        <div>
-          <p>It takes an eye blink to be on the web with Zeld.</p>
-          <span>
-            <Button />
-          </span>
-        </div>
+        <footer></footer>
       </div>
     </>
   );
