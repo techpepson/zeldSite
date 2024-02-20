@@ -28,6 +28,10 @@
   color: #f3e8ff;
 }
 
+.button__background:hover {
+  opacity: 0.8;
+}
+
 .text__color {
   color: var(--text-color);
 }
@@ -43,6 +47,7 @@
   color: transparent;
 }
 
+/*Styling for mix-blend of the sections of our potentials*/
 .mix-blend::before {
   content: "";
   position: absolute;
@@ -64,4 +69,24 @@
   opacity: 0.3;
   background-position: center;
   mix-blend-mode: multiply;
+}
+
+/*Spreading background colors*/
+
+.first-spread {
+  background-image: linear-gradient(180deg, #5c0feb, #cf0d0d);
+  filter: blur(200px);
+}
+
+.second-spread {
+  background-image: linear-gradient(360deg, #e11d48, #1e40af, #eab308);
+  filter: blur(200px);
+}
+p,
+span {
+  color: #94a3b8
+}
+
+.text-uniq{
+  color: #18181b
 }

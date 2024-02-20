@@ -8,7 +8,6 @@ import Scroll from "./components/utilityCompo/Scroll";
 const App: React.FC = () => {
   return (
     <>
-      <Header />
       <Scroll />
       <Routes>
         <Route path="/" element={<Landing></Landing>}></Route>

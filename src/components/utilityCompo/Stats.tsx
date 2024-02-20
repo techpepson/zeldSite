@@ -2,10 +2,15 @@ import React from "react";
 import { stats } from "../stats";
 import Button from "./Button";
 import { landPageStyles } from "../../styles/compoStyles/LandStyles/landHeader";
+import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 const Stats: React.FC = () => {
   return (
     <>
-      <div className={`${landPageStyles.statsStylesContainer}`}>
+      <div className={`${landPageStyles.statsStylesContainer} relative`}>
+        <div className="flex flex-wrap">
+          <div className={`${headerStyles.spreadColors} first-spread`}></div>
+          <div className={`${headerStyles.secondColors} second-spread`}></div>
+        </div>
         <div className={`${landPageStyles.statsStyles} max-w-[20ch]`}>
           <div className="border-solid rounded-md bg-gradient-to-br from-blue-500 to-pink-600">
             <span className="text-slate-200">Working History</span>
@@ -19,7 +24,9 @@ const Stats: React.FC = () => {
             With our expertise and dedication, <br /> we are committed to
             delivering exceptional services that meet your unique needs.
           </span>
-          <div className="mt-5"><Button /></div>
+          <div className="mt-5">
+            <Button />
+          </div>
         </div>
         <div className={`${landPageStyles.statsStylesRow}`}>
           <div className={`${landPageStyles.statsStyles}`}>

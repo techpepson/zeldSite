@@ -6,6 +6,7 @@ import "../styles/utilityStyles/landPageStyles.css";
 import { landImages } from "../styles/compoStyles/LandStyles/landHeader";
 import { Link } from "react-router-dom";
 import "../styles/utilityStyles/animate.css";
+import { Header } from "./components";
 import {
   headerStyles,
   landPageStyles,
@@ -19,12 +20,13 @@ import {
 
 const LandPage: React.FC = () => {
   return (
-    <>
-      <div className={`${headerStyles.centerBody} bg-img`}>
+    <div className="bg-[#08081d]">
+      <Header />
+      <div className={`${headerStyles.centerBody} bg-img background__color`}>
         {/*Beginnig of the main body of the page*/}
         <main>
           <div className="mt-10 relative">
-            <div className={`${landPageStyles.centerText}`}>
+            <div className={`${landPageStyles.centerText} relative`}>
               <p className={`${landPageStyles.largeText} font-serif`}>
                 <span>
                   Make your <span className="text__blue-pink">business</span>
@@ -38,7 +40,9 @@ const LandPage: React.FC = () => {
                   .
                 </span>
               </p>
-              <span className={`${landPageStyles.centerParagraph} mt-5 mb-1`}>
+              <span
+                className={`${landPageStyles.centerParagraph} mt-5 mb-1 text__color)`}
+              >
                 Partner with Zeld to get your business to the web with the
                 design of high performing and robust websites and webapps to
                 stay ahead of your competitors. For extra technological
@@ -77,7 +81,15 @@ const LandPage: React.FC = () => {
             </Link>
           </div>
           {/*Images to briefly introduce our services*/}
-          <div className={`${landPageStyles.landWorks}`}>
+          <div className={`${landPageStyles.landWorks} select-none relative`}>
+            <div className="flex flex-wrap">
+              <div
+                className={`${headerStyles.spreadColors} first-spread`}
+              ></div>
+              <div
+                className={`${headerStyles.secondColors} second-spread`}
+              ></div>
+            </div>
             {landImages.map((image, index) => (
               <img
                 src={image.src}
@@ -93,7 +105,7 @@ const LandPage: React.FC = () => {
             {/*Blog about e-business*/}
             <Link to="#" className="">
               <button type="button" title="Click to read more">
-                Benefits of having a website as a business
+                <span>Benefits of having a website as a business</span>
               </button>
             </Link>
           </div>
@@ -119,7 +131,7 @@ const LandPage: React.FC = () => {
                 <p className={`${landPageStyles.mediumTextLeft}`}>
                   <span className="text__blue-pink">Increase Visbility</span>
                 </p>
-                <p className={`${landPageStyles.smallText} text-white`}>
+                <p className={`${landPageStyles.smallText} text-uniq`}>
                   Having a website or web app makes it easier for individuals
                   surfing the web to easily identify your business. With
                   billions of internet users in the world, having a website
@@ -137,7 +149,7 @@ const LandPage: React.FC = () => {
                 >
                   Professionalism and Credibility
                 </p>
-                <p className={`${landPageStyles.smallText}`}>
+                <p className={`${landPageStyles.smallText} text-uniq`}>
                   A well-designed website can make you look professional. This
                   sense of professionalism makes you a credible candidate to
                   potential clients. It creates a sense of legitimacy to your
@@ -154,7 +166,7 @@ const LandPage: React.FC = () => {
                 >
                   Marketting and Sales
                 </p>
-                <p className={`${landPageStyles.smallText}`}>
+                <p className={`${landPageStyles.smallText} text-uniq`}>
                   A website is an avenue to promote and showcase your products
                   or services for sale. This not only increases sales, but goes
                   ahead to increase your customer base. You can go further to
@@ -172,7 +184,7 @@ const LandPage: React.FC = () => {
                 >
                   Customer Management
                 </p>
-                <p className={`${landPageStyles.smallText} text-white`}>
+                <p className={`${landPageStyles.smallText} text-uniq`}>
                   A web app rightly designed can be a link between your business
                   and customers. There can be a regular interaction with
                   customers, as well as receiving feedbacks from them to help
@@ -192,7 +204,7 @@ const LandPage: React.FC = () => {
               />{" "}
               <span className="text__blue-pink">Powerful Solutions</span>
             </p>
-            <span className={`${landPageStyles.smallText} text__color`}>
+            <span className={`${landPageStyles.smallText}`}>
               With our expertise and dedication, we are committed to delivering
               exceptional services that meet your unique needs.
             </span>
@@ -251,7 +263,7 @@ const LandPage: React.FC = () => {
                   Communication and Support
                 </span>
               </p>
-              <span className="text__color">
+              <span>
                 Zeld greatly has customers at heart and we not only run the
                 company, but constantly take the concerns of our clients. You
                 can logde complaints, make suggestions as well contact customer
@@ -276,7 +288,7 @@ const LandPage: React.FC = () => {
         </main>
         <footer></footer>
       </div>
-    </>
+    </div>
   );
 };
 

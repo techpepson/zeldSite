@@ -36,7 +36,8 @@ const Scroll: React.FC = () => {
         <button
           type="button"
           title={`${isAtBottom ? "Click to move up" : "Click to move down"}`}
-          onClick={isAtBottom ? moveUp : moveDown}
+onClick = { isAtBottom? moveUp: moveDown }
+            className="text-[#65a30d]"
         >
           {isAtBottom ? icons.chevronUp : icons.chevronDown}
         </button>

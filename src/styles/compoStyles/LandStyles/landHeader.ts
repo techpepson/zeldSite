@@ -12,7 +12,8 @@ export const headerStyles: headerTypes = {
     hideBars: `md:hidden mt-5`,
     rightNavs: `flex justify-end flex`,
     scrollStyles: `fixed right-0 top-[50%] z-[999]`,
-    scrollUp: ``
+    spreadColors: `absolute top-0 w-[40%] h-[38%] rounded-full right-0 max-sm:top-[20%]`, 
+    secondColors: `absolute left-0 w-[35%] h-[38%] rounded-full max-sm:bottom-0`, 
     // absoluteHeader: `max-md:absolute`,
 }
 

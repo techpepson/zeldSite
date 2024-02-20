@@ -9,7 +9,9 @@ export interface headerTypes {
     hideBars: string,
     rightNavs: string,
     hideCol: string,
-    scrollStyles: string
+    scrollStyles: string,
+    spreadColors: string
+    secondColors: string
 }
 
 export interface landPageStylesInt {
