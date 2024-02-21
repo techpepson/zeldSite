@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.footer-img {
+  background-image: url("../public/utilityImg/footer-img.jpg");
+}

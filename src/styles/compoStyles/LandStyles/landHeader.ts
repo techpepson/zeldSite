@@ -12,9 +12,13 @@ export const headerStyles: headerTypes = {
     hideBars: `md:hidden mt-5`,
     rightNavs: `flex justify-end flex`,
     scrollStyles: `fixed right-0 top-[50%] z-[999]`,
-    spreadColors: `absolute top-0 w-[40%] h-[38%] rounded-full right-0 max-sm:top-[20%]`, 
-    secondColors: `absolute left-0 w-[35%] h-[38%] rounded-full max-sm:bottom-0`, 
+    spreadColors: `absolute top-0 w-[40%] h-[38%] rounded-full right-0 max-sm:top-[20%]`,
+    secondColors: `absolute left-0 w-[35%] h-[38%] rounded-full max-sm:bottom-0`,
     // absoluteHeader: `max-md:absolute`,
+    footerStyles: `w-full h-[20rem] max-md:h-full mt-10 flex gap-5 justify-between max-md:flex-col max-md:justify-start max-md:w-auto`,
+    footerImg: `w-[3.5rem] h-[3.5rem] rounded-full`,
+    footerHeading: `flex flex-col text-[#94a3b8] gap-5`,
+    footerSpan: `text-2xl text__blue-pink`
 }
 
 export const landPageStyles: landPageStylesInt = {

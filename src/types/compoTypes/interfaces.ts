@@ -11,7 +11,11 @@ export interface headerTypes {
     hideCol: string,
     scrollStyles: string,
     spreadColors: string
-    secondColors: string
+    secondColors: string,
+    footerStyles: string,
+    footerImg: string,
+    footerHeading: string,
+    footerSpan: string
 }
 
 export interface landPageStylesInt {

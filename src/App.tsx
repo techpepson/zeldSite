@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Landing, Header } from "./components/components";
+import { Landing } from "./components/components";
 // import MiniNav from "./components/utilityCompo/MiniNav";
 import "./index.css";
 import Scroll from "./components/utilityCompo/Scroll";

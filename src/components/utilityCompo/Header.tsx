@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { icons } from "../../../public/utilityImg/icons";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { headers } from "../../styles/compoStyles/LandStyles/landHeader";
+import '../../styles/utilityStyles/animate.css'
 import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 const Header: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +22,11 @@ const Header: React.FC = () => {
             <div
               className={`${headerStyles.hideBars} ${headerStyles.rightNavs}`}
             >
-              <button type="button" className={``} onClick={toggleMobile}>
+              <button
+                type="button"
+                className={`${isMobile ? "text-[#be123c]" : "text-[#93c5fd]"}`}
+                onClick={toggleMobile}
+              >
                 {isMobile ? icons.cross : icons.barsIcon}
               </button>
             </div>
@@ -53,7 +57,10 @@ const Header: React.FC = () => {
                 <Button />
                 <div className={`${headerStyles.buttonStyles}`}>
                   {/*Sun icon to toggle light and dark mode*/}
-                  <button type="button" className={`font-normal w-6 h-6`}>
+                  <button
+                    type="button"
+                    className={`font-normal w-6 h-6 text-[#d97706] oscillate-animation`}
+                  >
                     {icons.sunIcon}
                   </button>
                 </div>

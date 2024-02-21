@@ -7,6 +7,7 @@ import { landImages } from "../styles/compoStyles/LandStyles/landHeader";
 import { Link } from "react-router-dom";
 import "../styles/utilityStyles/animate.css";
 import { Header } from "./components";
+import Footer from "./utilityCompo/Footer";
 import {
   headerStyles,
   landPageStyles,
@@ -286,8 +287,10 @@ const LandPage: React.FC = () => {
             </div>
           </div>
         </main>
-        <footer></footer>
       </div>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 };
