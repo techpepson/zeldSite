@@ -1,15 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { icons } from "../../../public/utilityImg/icons";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import '../../styles/utilityStyles/animate.css'
+import "../../styles/utilityStyles/animate.css";
 import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../states/globalStates/store";
+import { toggleDarkMode } from "../../states/compoStates/toggleDark";
 const Header: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const dispatch = useDispatch();
+  const selectToggleMode = useSelector((state: RootState) => {
+    return state.darkMode.isDarkMode;
+  });
 
   const toggleMobile = () => {
     setIsMobile(!isMobile);
   };
+
+  const handleToggleDarkMode = () => {
+    dispatch(toggleDarkMode());
+  };
+  useEffect(() => {
+    handleToggleDarkMode();
+  }, [dispatch]);
 
   return (
     <>
@@ -59,9 +73,12 @@ const Header: React.FC = () => {
                   {/*Sun icon to toggle light and dark mode*/}
                   <button
                     type="button"
-                    className={`font-normal w-6 h-6 text-[#d97706] oscillate-animation`}
+                    className={`font-normal w-6 h-6 text-[#d97706] ${
+                      selectToggleMode ? "oscillate-animation" : "animate-none"
+                    }`}
+                    onClick={handleToggleDarkMode}
                   >
-                    {icons.sunIcon}
+                    {selectToggleMode ? icons.sunIcon : icons.moonIcon}
                   </button>
                 </div>
               </div>

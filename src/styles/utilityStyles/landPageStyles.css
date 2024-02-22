@@ -90,3 +90,7 @@ span {
 .text-uniq {
   color: #18181b;
 }
+
+.light-background {
+  background-image: white;
+}

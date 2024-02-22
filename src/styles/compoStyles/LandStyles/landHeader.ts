@@ -15,7 +15,7 @@ export const headerStyles: headerTypes = {
     spreadColors: `absolute top-0 w-[40%] h-[38%] rounded-full right-0 max-sm:top-[20%]`,
     secondColors: `absolute left-0 w-[35%] h-[38%] rounded-full max-sm:bottom-0`,
     // absoluteHeader: `max-md:absolute`,
-    footerStyles: `w-full h-[20rem] max-md:h-full mt-10 flex gap-5 justify-between max-md:flex-col max-md:justify-start max-md:w-auto`,
+    footerStyles: `w-auto h-auto mt-10 flex gap-4 justify-around max-md:flex-col max-md:justify-start max-md:w-auto`,
     footerImg: `w-[3.5rem] h-[3.5rem] rounded-full`,
     footerHeading: `flex flex-col text-[#94a3b8] gap-5`,
     footerSpan: `text-2xl text__blue-pink`
@@ -32,7 +32,7 @@ export const landPageStyles: landPageStylesInt = {
     centerParagraph: `text-center max-w-max`,
     roundImage: `w-[2.5rem] h-[2.5rem] rounded-full max-[360px]:w-[1.5rem] max-[360px]:h-[1.5rem] max-[320px]:hidden`,
     buttonStyle: `flex justify-center items-center text-md mt-4`,
-    benefitStyle: `flex  justify-center items-center text-sm mt-4 border rounded-full`,
+    benefitStyle: `flex text-sm mt-4 border rounded-full`,
     landWorks: `flex gap-5 flex-wrap items-center justify-center mt-10 max-w-auto`,
     landWorksImg: `flex w-[20rem] h-[20rem] rounded-md`,
     bgStyles: `bg-no-repeat bg-blend-multiply h-[200px] w-auto`,

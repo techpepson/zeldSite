@@ -43,3 +43,7 @@ export interface landImagesInt {
     image: string,
     src: symbol
 }
+
+export interface isDarkMode{
+    isDarkMode: boolean
+}

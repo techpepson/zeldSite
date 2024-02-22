@@ -76,3 +76,37 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
+//Check this out
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import { xap, xicon, instagram, linkedin } from "../../../public/LandImg/landImg";
+// import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
+
+// const FooterLink = ({ to, title, imgSrc, imgAlt }) => (
+//   <Link to={to} title={title}>
+//     <img src={imgSrc} alt={imgAlt} className={`${headerStyles.footerImg}`} />
+//   </Link>
+// );
+
+// const Footer = () => {
+//   return (
+//     <>
+//       {/* Footer Section Container */}
+//       <div className={`${headerStyles.footerStyles} footer-img`}>
+//         {/* ... other footer content ... */}
+//         <div className={`${headerStyles.footerHeading}`}>
+//           <span className={`text-3xl text__blue-pink`}>Party with us</span>
+//           <div className={`flex text-[#94a3b8] gap-5 max-md:flex-col`}>
+//             <FooterLink to="#" title="Connect on X" imgSrc={xicon} imgAlt="X icon" />
+//             <FooterLink to="#" title="Connect on Whatsapp" imgSrc={xap} imgAlt="Whatsapp icon" />
+//             <FooterLink to="#" title="Connect on Instagram" imgSrc={instagram} imgAlt="Instagram icon" />
+//             <FooterLink to="#" title="Connect on Linkedin" imgSrc={linkedin} imgAlt="LinkedIn icon" />
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Footer;

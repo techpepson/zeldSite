@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import "../styles/utilityStyles/animate.css";
 import { Header } from "./components";
 import Footer from "./utilityCompo/Footer";
+import { RootState } from "../states/globalStates/store";
+import { useSelector } from "react-redux";
 import {
   headerStyles,
   landPageStyles,
@@ -20,10 +22,19 @@ import {
 } from "../../public/LandImg/landImg";
 
 const LandPage: React.FC = () => {
+  const selcectToggleMode = useSelector(
+    (state: RootState) => state.darkMode.isDarkMode
+  );
   return (
-    <div className="bg-[#08081d]">
+    <div
+      className={`${selcectToggleMode ? "bg-[#08081d]" : "light-background"}`}
+    >
       <Header />
-      <div className={`${headerStyles.centerBody} bg-img background__color`}>
+      <div
+        className={`${headerStyles.centerBody} ${
+          selcectToggleMode ? "bg-img background__color" : "light-background"
+        } `}
+      >
         {/*Beginnig of the main body of the page*/}
         <main>
           <div className="mt-10 relative">
@@ -102,12 +113,12 @@ const LandPage: React.FC = () => {
           </div>
           {/*Agent trusts in Zeld */}
           <Agents />
-          <div className={`${landPageStyles.benefitStyle} mb-7`}>
+          <div
+            className={`${landPageStyles.benefitStyle} mb-7 inline-flex justify-center items-center`}
+          >
             {/*Blog about e-business*/}
-            <Link to="#" className="">
-              <button type="button" title="Click to read more">
-                <span>Benefits of having a website as a business</span>
-              </button>
+            <Link to="#" title="Click to read more" target="_blank">
+              <span>Benefits of having a website as a business</span>
             </Link>
           </div>
           <div className={`${landPageStyles.centerText}`}>
@@ -215,7 +226,7 @@ const LandPage: React.FC = () => {
             <Stats />
           </div>
           <div className={`${landPageStyles.statsStylesRow} mt-10`}>
-            <div>
+            <div className="flex flex-col">
               <p className={`${landPageStyles.mediumText}`}>
                 <span className="text__blue-pink text-2xl">Our Pride</span>{" "}
                 <span className="unique__text">as Zeld</span>
@@ -225,7 +236,7 @@ const LandPage: React.FC = () => {
                 that requires top-notch technological services.
               </span>
               {/*Utility class for the button*/}
-              <div className="mt-5">
+              <div className="mt-5 inline-flex justify-center ">
                 <Button />
               </div>
             </div>
