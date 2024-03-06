@@ -22,17 +22,17 @@ import {
 } from "../../public/LandImg/landImg";
 
 const LandPage: React.FC = () => {
-  const selcectToggleMode = useSelector(
+  const selectToggleMode = useSelector(
     (state: RootState) => state.darkMode.isDarkMode
   );
   return (
     <div
-      className={`${selcectToggleMode ? "bg-[#08081d]" : "light-background"}`}
+      className={`${selectToggleMode ? "bg-[#08081d]" : "light-background"} transition-colors duration-[0.3s]`}
     >
       <Header />
       <div
         className={`${headerStyles.centerBody} ${
-          selcectToggleMode ? "bg-img background__color" : "light-background"
+          selectToggleMode ? "bg-img background__color" : "light-background"
         } `}
       >
         {/*Beginnig of the main body of the page*/}
