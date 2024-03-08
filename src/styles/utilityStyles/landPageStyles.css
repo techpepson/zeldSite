@@ -5,7 +5,7 @@
 /*This is the styling for the colors of the page.*/
 
 :root {
-  --text-color: #031f41;
+  --text-color: #021225;
   --text-size: 5rem;
 }
 
@@ -88,7 +88,7 @@ span {
 }
 
 .text-uniq {
-  color: #18181b;
+  color: #121213;
 }
 
 .light-background {

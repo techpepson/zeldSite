@@ -5,10 +5,12 @@
 /*This is the utility styles which include styles like animations for certain buttons and images*/
 
 .oscillate-animation {
+  -webkit-animation: oscillate-animation ease-in-out 5s infinite;
   animation: oscillate-animation ease-in-out 5s infinite;
 }
 
 .beep {
+  -webkit-animation: beep ease-in-out 5s infinite;
   animation: beep ease-in-out 5s infinite;
 }
 
@@ -44,5 +46,33 @@
   }
   100% {
     transform: translateZ(10%);
+  }
+}
+
+.intersection-side {
+  -webkit-animation: intersection-side ease-in-out 1.5s;
+  animation: intersection-side ease-in-out 1.5s;
+}
+
+@-webkit-keyframes intersection-side {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    transition: all;
+    opacity: 0.5;
+    transform: translateX(0%);
+  }
+}
+@keyframes intersection-side {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    transition: all;
+    opacity: 0.5;
+    transform: translateX(0%);
   }
 }

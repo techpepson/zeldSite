@@ -22,7 +22,7 @@ const Scroll: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isAtBottom]);
 
   const moveDown = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
@@ -36,8 +36,8 @@ const Scroll: React.FC = () => {
         <button
           type="button"
           title={`${isAtBottom ? "Click to move up" : "Click to move down"}`}
-onClick = { isAtBottom? moveUp: moveDown }
-            className="text-[#65a30d]"
+          onClick={isAtBottom ? moveUp : moveDown}
+          className="text-[#65a30d]"
         >
           {isAtBottom ? icons.chevronUp : icons.chevronDown}
         </button>

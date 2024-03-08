@@ -23,22 +23,22 @@ const Header: React.FC = () => {
   };
   useEffect(() => {
     handleToggleDarkMode();
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
-      <div className="container">
-        {/*Header section to contain the land page navs*/}
+      <div className={`container`}>
+        {/*Header section to contain the land page navigation*/}
         <header>
           <nav>
-            {/*Nav buttons to navigate to diffferent pages*/}
+            {/*Nav buttons to navigate to different pages*/}
             {/*Bars icons to show when the screen is less than medium size*/}
             <div
               className={`${headerStyles.hideBars} ${headerStyles.rightNavs}`}
             >
               <button
                 type="button"
-                className={`${isMobile ? "text-[#be123c]" : "text-[#93c5fd]"}`}
+                className={`${isMobile ? "text-[#be123c]" : "text-[#93c5fd]"} transition-all duration-[0.5s]`}
                 onClick={toggleMobile}
               >
                 {isMobile ? icons.cross : icons.barsIcon}
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
               >
                 <p className="text-3xl max-md:hidden">Zeld Technologies</p>
                 <div
-                  className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs} text__color`}
+                  className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs}`}
                 >
                   {/*Navigation Links*/}
                   <Link to="#">
