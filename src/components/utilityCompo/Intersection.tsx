@@ -10,7 +10,7 @@ interface IntersectionProps {
 
 const Intersection: React.FC<IntersectionProps> = ({ children }) => {
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (

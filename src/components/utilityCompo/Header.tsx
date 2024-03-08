@@ -7,8 +7,9 @@ import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../states/globalStates/store";
 import { toggleDarkMode } from "../../states/compoStates/toggleDark";
+import "../../styles/utilityStyles/landPageStyles.css";
 const Header: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
   const dispatch = useDispatch();
   const selectToggleMode = useSelector((state: RootState) => {
     return state.darkMode.isDarkMode;
@@ -38,13 +39,15 @@ const Header: React.FC = () => {
             >
               <button
                 type="button"
-                className={`${isMobile ? "text-[#be123c]" : "text-[#93c5fd]"} transition-all duration-[0.5s]`}
+                className={`${
+                  isMobile ? "text-[#be123c]" : "text-[#93c5fd]"
+                } transition-all duration-[0.5s]`}
                 onClick={toggleMobile}
               >
                 {isMobile ? icons.cross : icons.barsIcon}
               </button>
             </div>
-            <div className={`${headerStyles.absoluteHeader}`}>
+            <div>
               <div
                 className={`${headerStyles.headerStyle} ${
                   isMobile ? headerStyles.headerStyleCol : headerStyles.hideCol
@@ -55,18 +58,26 @@ const Header: React.FC = () => {
                   className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs}`}
                 >
                   {/*Navigation Links*/}
-                  <Link to="#">
-                    <p>Our services</p>
-                  </Link>
-                  <Link to="#">
-                    <p>Why choose Zeld</p>
-                  </Link>
-                  <Link to="#">
-                    <p>Testimonials</p>
-                  </Link>
-                  <Link to="#">
-                    <p>Meet our Clients</p>
-                  </Link>
+                  <div className="relative">
+                    <Link to="#">
+                      <p className="button-hover">Our services</p>
+                    </Link>
+                  </div>
+                  <div className="relative">
+                    <Link to="#">
+                      <p className="button-hover">Why choose Zeld</p>
+                    </Link>
+                  </div>
+                  <div className="relative">
+                    <Link to="#">
+                      <p className="button-hover">Testimonials</p>
+                    </Link>
+                  </div>
+                  <div className="relative">
+                    <Link to="#">
+                      <p className="button-hover">Meet our Clients</p>
+                    </Link>
+                  </div>
                 </div>
                 <Button />
                 <div className={`${headerStyles.buttonStyles}`}>

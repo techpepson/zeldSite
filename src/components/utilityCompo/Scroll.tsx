@@ -3,7 +3,7 @@ import { icons } from "../../../public/utilityImg/icons";
 import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 
 const Scroll: React.FC = () => {
-  const [isAtBottom, setIsAtBottom] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
