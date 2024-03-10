@@ -11,6 +11,7 @@ import Footer from "./utilityCompo/Footer";
 import { RootState } from "../states/globalStates/store";
 import { useSelector } from "react-redux";
 import Intersection from "./utilityCompo/Intersection";
+import "../index.css";
 import {
   headerStyles,
   landPageStyles,
@@ -143,17 +144,15 @@ const LandPage: React.FC = () => {
           <div className={`${landPageStyles.gridStyles} grid gap-5 relative`}>
             <Intersection>
               <div
-                className={`bg-[url(public/landImg/globe2.avif)] ${landPageStyles.bgStyles} bg-center relative bg-cover`}
+                className={`${landPageStyles.bgStyles} bg-center relative bg-cover`}
               >
                 <div className="mix-blends">
                   <p className={`${landPageStyles.mediumTextLeft}`}>
-                    <span className="text__blue-pink">Increase Visibility</span>
+                    <span className="text__blue-pink visible-after">
+                      Increase Visibility
+                    </span>
                   </p>
-                  <p
-                    className={`${landPageStyles.smallText} ${
-                      selectToggleMode ? "text-slate-200" : "text-white"
-                    }`}
-                  >
+                  <p className={`${landPageStyles.smallText} text-[#95959b]`}>
                     Having a website or web app makes it easier for individuals
                     surfing the web to easily identify your business. With
                     billions of internet users in the world, having a website
@@ -164,9 +163,7 @@ const LandPage: React.FC = () => {
               </div>
             </Intersection>
             <Intersection>
-              <div
-                className={`bg-[url(public/landImg/credibleImg.jpg)] ${landPageStyles.bgStyles} relative bg-center`}
-              >
+              <div className={` ${landPageStyles.bgStyles} relative bg-center`}>
                 <div className="mix-blends">
                   <p
                     className={`${landPageStyles.mediumTextLeft} text__blue-pink`}
@@ -183,9 +180,7 @@ const LandPage: React.FC = () => {
               </div>
             </Intersection>
             <Intersection>
-              <div
-                className={`bg-[url(public/landImg/graphReal.avif)] ${landPageStyles.bgStyles} relative bg-center`}
-              >
+              <div className={` ${landPageStyles.bgStyles} relative bg-center`}>
                 <div className="mix-blends">
                   <p
                     className={`${landPageStyles.mediumTextLeft} text__blue-pink`}
@@ -203,9 +198,7 @@ const LandPage: React.FC = () => {
               </div>
             </Intersection>
             <Intersection>
-              <div
-                className={`relative bg-[url(public/landImg/customerMan.avif)] ${landPageStyles.bgStyles} bg-center`}
-              >
+              <div className={`relative  ${landPageStyles.bgStyles} bg-center`}>
                 <div className="mix-blends">
                   <p
                     className={`${landPageStyles.mediumTextLeft} text__blue-pink`}

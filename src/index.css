@@ -19,3 +19,11 @@
   width: 5px;
   border-radius: 10px;
 }
+
+/* .visible-after::after {
+  content: url("../public//LandImg//credibleImg.jpg");
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+} */
