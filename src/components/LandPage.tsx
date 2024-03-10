@@ -61,7 +61,7 @@ const LandPage: React.FC = () => {
                 Partner with Zeld to get your business to the web with the
                 design of high performing and robust websites and web apps to
                 stay ahead of your competitors. For extra technological
-                services, depend on as as well.
+                services, depend on us as well.
               </span>
               <span className={`${landPageStyles.mediumText}`}>
                 <span className="unique__text">Where Zeld calls</span>,{" "}
@@ -133,7 +133,7 @@ const LandPage: React.FC = () => {
               your <span className="unique__text">business</span>
             </p>
             <span className={`${landPageStyles.smallText}`}>
-              A website is the first point of contact for potential customers{" "}
+              A website is the first point of contact for potential customers,
               <br />
               availing to them valuable information and creating a lasting
               impression.
@@ -143,7 +143,7 @@ const LandPage: React.FC = () => {
           <div className={`${landPageStyles.gridStyles} grid gap-5 relative`}>
             <Intersection>
               <div
-                className={`bg-[url(public/landImg/globe.png)] ${landPageStyles.bgStyles} bg-center relative bg-cover`}
+                className={`bg-[url(public/landImg/globe2.avif)] ${landPageStyles.bgStyles} bg-center relative bg-cover`}
               >
                 <div className="mix-blends">
                   <p className={`${landPageStyles.mediumTextLeft}`}>

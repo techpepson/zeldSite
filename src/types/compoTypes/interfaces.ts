@@ -40,7 +40,7 @@ export interface landPageStylesInt {
 }
 export interface landImagesInt {
   image: string;
-  src: symbol;
+  src: string;
 }
 
 export interface isDarkMode {

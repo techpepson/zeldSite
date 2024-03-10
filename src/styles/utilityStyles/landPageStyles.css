@@ -98,30 +98,29 @@ span {
 .button-hover:hover::before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(360deg, #5757fd, #421a03, #411018);
+  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
   width: 100%;
-  height: 5px;
-  top: 100%;
+  height: 3px;
   justify-content: center;
+  top: 100%;
   animation: underline ease-in-out 0.3s;
 }
 .button-hover:active::before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(360deg, #5757fd, #421a03, #411018);
-  width: 100%;
-  height: 5px;
+  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
+  height: 3px;
   top: 100%;
   justify-content: center;
 }
 
 @keyframes underline {
   0% {
-    opacity: 0;
-    transform: translateX(-7%);
+    width: 0;
+    transform: translateX(-0%);
   }
   100% {
-    opacity: 0.9;
+    width: 100%;
     transform: translateX(0%);
   }
 }

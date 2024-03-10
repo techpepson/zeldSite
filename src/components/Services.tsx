@@ -2,9 +2,11 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div>
-      <p className="text-red-400">Services</p>
-    </div>
+    <>
+      <div className="container">
+        <p>Our Services Page</p>
+      </div>
+    </>
   );
 };
 
