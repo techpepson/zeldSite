@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/utilityStyles/landPageStyles.css"
+import "../../styles/utilityStyles/landPageStyles.css";
 
 const Button: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Button: React.FC = () => {
       <div className="button__background px-3 rounded-full">
         <Link to="#">
           <button type="button" title="Click to make a request">
-            Get Started
+            <span className="text-white text-sm">Work With Us</span>
           </button>
         </Link>
       </div>

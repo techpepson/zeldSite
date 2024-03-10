@@ -53,7 +53,7 @@ const Header: React.FC = () => {
                   isMobile ? headerStyles.headerStyleCol : headerStyles.hideCol
                 }`}
               >
-                <p className="text-3xl max-md:hidden">Zeld Technologies</p>
+                <p className="text-3xl">Zeld Technologies</p>
                 <div
                   className={`${headerStyles.buttonStyles} ${headerStyles.buttonStylesCol} ${headerStyles.rightNavs}`}
                 >

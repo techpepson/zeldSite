@@ -9,6 +9,7 @@ import {
   instagram,
   linkedin,
 } from "../../../public/LandImg/landImg";
+import Copyright from "./Copyright";
 
 /*This is the footer section of the site*/
 const Footer: React.FC = () => {
@@ -19,19 +20,33 @@ const Footer: React.FC = () => {
         <span className="text-3xl">Zeld Technologies</span>
         <div className={`${headerStyles.footerHeading}`}>
           <span className={`${headerStyles.footerSpan}`}>Company</span>
-          <Link to="#">About Us</Link>
-          <Link to="#">Testimonials</Link>
-          <Link to="#">Blog</Link>
+          <Link to="#" className="text-slate-50">
+            About Us
+          </Link>
+          <Link to="#" className="text-slate-50">
+            Testimonials
+          </Link>
+          <Link to="#" className="text-slate-50">
+            Blog
+          </Link>
         </div>
         <div className={`${headerStyles.footerHeading}`}>
           <span className={`${headerStyles.footerSpan}`}>Services</span>
-          <Link to="#">Our Services</Link>
-          <Link to="#">Make a Request</Link>
+          <Link to="#" className="text-slate-50">
+            Our Services
+          </Link>
+          <Link to="#" className="text-slate-50">
+            Make a Request
+          </Link>
         </div>
         <div className={`${headerStyles.footerHeading}`}>
           <span className={`${headerStyles.footerSpan}`}>Help</span>
-          <Link to="#">Contact Us</Link>
-          <Link to="#">Customer Support</Link>
+          <Link to="#" className="text-slate-50">
+            Contact Us
+          </Link>
+          <Link to="#" className="text-slate-50">
+            Customer Support
+          </Link>
         </div>
         <div className={`${headerStyles.footerHeading}`}>
           <span className={`text-3xl text__blue-pink`}>Party with us</span>
@@ -70,7 +85,9 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
+        <div></div>
       </div>
+      <Copyright />
     </>
   );
 };
