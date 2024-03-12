@@ -12,6 +12,8 @@ import {
   customerImg,
   coding,
   ideaImg,
+  uiCoder,
+  scaleBusiness,
 } from "../../public/LandImg/landImg";
 
 {
@@ -215,70 +217,88 @@ const Services: React.FC = () => {
                 customer acquisition.
               </span>
             </p>
-            <div><Button /></div>
+            <div>
+              <Button />
+            </div>
           </div>
           <div className="what we really do">
-            <p>Our Core Services</p>
-            <div className="create-ideas">
-              <p>
-                <h1>Idea Creation</h1>
-              </p>
-              <p>
-                <span>
-                  Zeld Technologies is endowed with highly skilled team players
-                  who are innovative in idea creation and the realization of
-                  these ideas. Have you ever thought about doing something and
-                  you are not clear about it, reach us and we will help clarify
-                  your ideas and visualize it, even if it involves we going out
-                  of our normal routine.
-                </span>
-              </p>
+            <p>Our Core Skills</p>
+            <div className={`${servicesHeader.coreServices}`}>
+              <div className="create-ideas">
+                <p>
+                  <h1>Idea Creation</h1>
+                </p>
+                <p>
+                  <span>
+                    Zeld Technologies is endowed with highly skilled team
+                    players who are innovative in idea creation and the
+                    realization of these ideas. Have you ever thought about
+                    doing something and not clear about it, reach us and we will
+                    help clarify your ideas and visualize it, even if it
+                    involves we going out of our normal routine.
+                  </span>
+                </p>
+              </div>
+              <img src={ideaImg} alt="An image of idea creation." />
             </div>
-            <img src={ideaImg} alt="An image of idea creation." />
-            <img src="" alt="An image of a programmer coding." />
-            <div className="building-products">
-              <p>
-                <h1>Building Products</h1>
-              </p>
-              <p>
-                <span>
-                  We build upon the philosophy that great products require
-                  precision, dexterity and all-hands-on-deck mentality. Our keen
-                  sense of emerging technologies and business acumen culminates
-                  from years of experience producing sustainable and visible
-                  products built to last.
-                </span>
-              </p>
+            <div className={`${servicesHeader.coreServices}`}>
+              <img src={coding} alt="An image of a programmer coding." />
+              <div className="building-products">
+                <p>
+                  <h1>Building Products</h1>
+                </p>
+                <p>
+                  <span>
+                    We build upon the philosophy that great products require
+                    precision, dexterity and all-hands-on-deck mentality. Our
+                    keen sense of emerging technologies and business acumen
+                    culminates from years of experience producing sustainable
+                    and visible products built to last.
+                  </span>
+                </p>
+              </div>
             </div>
-            <div className="scale-business">
-              <p>
-                <h1>Scale Business</h1>
-              </p>
-              <p>
-                <span>
-                  We pride ourselves on our branded approach to transforming
-                  ideas into businesses primed for success. Following the Design
-                  Sprint principles, we create an idea and visualize it. There
-                  is therefore the assurance that our clients get nothing but
-                  the best from Zeld because they of course deserve nothing but
-                  the best.
-                </span>
-              </p>
+            <div className={`${servicesHeader.coreServices}`}>
+              <div className="scale-business">
+                <p>
+                  <h1>Scale Business</h1>
+                </p>
+                <p>
+                  <span>
+                    We pride ourselves on our branded approach to transforming
+                    ideas into businesses primed for success. Following the
+                    Design Sprint principles, we make sure to understand
+                    whatever needs you have, and then employ critical thinking
+                    and analytical skills through team work to find a solution
+                    to whatever the problem may be.There is therefore the assurance
+                    that our clients get nothing but the best from Zeld because
+                    they of course deserve nothing but the best.
+                  </span>
+                </p>
+              </div>
+              <img
+                src={scaleBusiness}
+                alt="An image of a team of developers."
+              />
             </div>
-            <img src={coding} alt="An image of a team of developers." />
           </div>
-          <div className="concluding-remarks">
-            <p>
-              <h1>Ready to get Started? </h1>
-            </p>
-            <p>
-              <span>
-                Apparently we had reached a great height in the atmosphere, for
-                the sky was dead black, and the stars had ceased to twinkle,
-                nonetheless, we are forever available to our cherished clients.
-                We look forward to working with you.
-              </span>
-            </p>
+          <div className={`concluding-remarks ${servicesHeader.workStyles}`}>
+            <div className={`${servicesHeader.coreServices}`}>
+              <div>
+                <p>
+                  <h1>Ready to get Started? </h1>
+                </p>
+                <p>
+                  <span>
+                    Apparently we had reached a great height in the atmosphere,
+                    for the sky was dead black, and the stars had ceased to
+                    twinkle, nonetheless, we are forever available to our
+                    cherished clients. We look forward to working with you.
+                  </span>
+                </p>
+              </div>
+              <img src={customerImg} alt="An image of a man waving." />
+            </div>
             <div>
               <Button />
             </div>

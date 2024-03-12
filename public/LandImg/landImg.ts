@@ -23,6 +23,8 @@ import webDesign from "../LandImg/web-design-img.jpg";
 import webDev from "../LandImg/web-dev-img.jpg";
 import ideaImg from "../LandImg/idea-img.jpg";
 import coding from "../LandImg/coding-img.jpg";
+import uiCoder from "../LandImg//ui-coder.jpg";
+import scaleBusiness from "../LandImg/scaleBusiness.png";
 export {
   barGraph,
   cctv,
@@ -49,4 +51,6 @@ export {
   webDev,
   ideaImg,
   coding,
+  uiCoder,
+  scaleBusiness,
 };
