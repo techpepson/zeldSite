@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-area {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, auto));
+  grid-template-rows: repeat(2, minmax(auto, auto));
+  grid-template-areas:
+    "image1 text1 image2"
+    "text2 image3 text3";
+}
+
+.first-image {
+  grid-area: image1;
+}
+
+.first-text {
+  grid-area: text1;
+}
+
+.second-image {
+  grid-area: image2;
+}
+
+.second-text {
+  grid-area: text2;
+}
+
+.third-image {
+  grid-area: image3;
+}
+
+.third-text {
+  grid-area: text3;
+}

@@ -59,7 +59,12 @@ const Header: React.FC = () => {
                 >
                   {/*Navigation Links*/}
                   <div className="relative">
-                    <Link to="#">
+                    <Link to="/">
+                      <p className="button-hover">Home</p>
+                    </Link>
+                  </div>
+                  <div className="relative">
+                    <Link to="../Services">
                       <p className="button-hover">Our services</p>
                     </Link>
                   </div>

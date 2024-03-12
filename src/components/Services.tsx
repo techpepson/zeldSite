@@ -1,8 +1,18 @@
 import React from "react";
 import { Header } from "./components";
-import Agents from "./utilityCompo/Agents";
 import Button from "./utilityCompo/Button";
 import Footer from "./utilityCompo/Footer";
+import { servicesHeader } from "../styles/servicesStyles";
+import "../styles/compoStyles/servicesPage.css";
+import {
+  codeFix,
+  webDev,
+  webDesign,
+  mobileDev,
+  customerImg,
+  coding,
+  ideaImg,
+} from "../../public/LandImg/landImg";
 
 {
   /*The services page that contains all that we do as Zeld*/
@@ -21,7 +31,9 @@ const Services: React.FC = () => {
               <h1>What We Do...</h1>
             </p>
             {/*A div container that contains all the short description of services*/}
-            <div className="animated-services-container">
+            <div
+              className={`animated-services-container ${servicesHeader.animateStyling}`}
+            >
               <div className="web-dev">
                 <p>
                   <h1>Web Development</h1>
@@ -36,6 +48,7 @@ const Services: React.FC = () => {
                   </span>
                 </p>
               </div>
+              {/*Container for mobile application development*/}
               <div className="mobile-application">
                 <p>
                   <h1>Mobile Application Development</h1>
@@ -101,11 +114,11 @@ const Services: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="full-description">
+          <div className={`flex flex-col`}>
             <p>Our Work</p>
             <div className="full-description-container">
-              <div className="upper-describe">
-                <img src="" alt="Floating-app" />
+              <div className={`${servicesHeader.floatingImgStyles}`}>
+                <img src={customerImg} alt="Floating-app" />
                 <div className="web-dev-text">
                   <p>
                     <h1>Web Development</h1>
@@ -127,9 +140,9 @@ const Services: React.FC = () => {
                     </span>
                   </p>
                 </div>
-                <img src="" alt="Floating-mobile" />
+                <img src={webDev} alt="Floating-mobile" />
               </div>
-              <div className="lower-describe">
+              <div className={`${servicesHeader.floatingImgStyles}`}>
                 <div className="mobile-dev-text">
                   <p>
                     <h1>Mobile Application Development</h1>
@@ -150,7 +163,7 @@ const Services: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src=""
+                  src={mobileDev}
                   alt="A floating image showing our work as mobile app developers"
                 />
                 <div className="ui/ux-text">
@@ -167,28 +180,30 @@ const Services: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="sales">
-                <p>
-                  <span>
-                    Wait... Want an electronic device to buy as well, we also
-                    deal in high quality electronic devices from high quality
-                    and highly recognized brands like Hp, Dell, Sony, among
-                    other amazing brands.
-                  </span>
-                </p>
-              </div>
+            </div>
+            <div className="sales">
+              <p>
+                <span>
+                  Wait... Want an electronic device to buy as well, we also deal
+                  in high quality electronic devices from high quality and
+                  highly recognized brands like Hp, Dell, Sony, among other
+                  amazing brands.
+                </span>
+              </p>
             </div>
           </div>
-          <div className="how-we-work">
-            <p>How We Work</p>
-            <p>Small teams of dedicated and honest team players</p>
+          <div className={`${servicesHeader.workStyles} how-we-work`}>
+            <div>
+              <p>How We Work</p>
+              <p>Small teams of dedicated and honest team players</p>
+            </div>
             <img
-              src=""
+              src={webDesign}
               alt="An image of a team leader showing our team structure"
             />
             <p>
               <span>
-                We believe in breaking dwn complex problems into smaller ones
+                We believe in breaking down complex problems into smaller ones
                 for a better solution. We break down our developers into smaller
                 teams comprising of UI/UX designers, product, project and QA
                 managers. Following the Design Sprint principles, we create an
@@ -200,7 +215,7 @@ const Services: React.FC = () => {
                 customer acquisition.
               </span>
             </p>
-            <Button />
+            <div><Button /></div>
           </div>
           <div className="what we really do">
             <p>Our Core Services</p>
@@ -219,7 +234,7 @@ const Services: React.FC = () => {
                 </span>
               </p>
             </div>
-            <img src="" alt="An image of idea creation." />
+            <img src={ideaImg} alt="An image of idea creation." />
             <img src="" alt="An image of a programmer coding." />
             <div className="building-products">
               <p>
@@ -250,7 +265,7 @@ const Services: React.FC = () => {
                 </span>
               </p>
             </div>
-            <img src="" alt="An image of a team of developers." />
+            <img src={coding} alt="An image of a team of developers." />
           </div>
           <div className="concluding-remarks">
             <p>
