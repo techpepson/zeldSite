@@ -5,7 +5,6 @@ import Footer from "./utilityCompo/Footer";
 import { servicesHeader } from "../styles/servicesStyles";
 import "../styles/compoStyles/servicesPage.css";
 import {
-  codeFix,
   webDev,
   webDesign,
   mobileDev,
@@ -34,9 +33,9 @@ const Services: React.FC = () => {
             </p>
             {/*A div container that contains all the short description of services*/}
             <div
-              className={`animated-services-container ${servicesHeader.animateStyling}`}
+              className={`animated-services-container ${servicesHeader.animateStyling} overflow-hidden`}
             >
-              <div className="web-dev">
+              <div className={`web-dev relative`}>
                 <p>
                   <h1>Web Development</h1>
                 </p>
@@ -116,74 +115,83 @@ const Services: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={`flex flex-col`}>
-            <p>Our Work</p>
-            <div className="full-description-container">
-              <div className={`${servicesHeader.floatingImgStyles}`}>
-                <img src={customerImg} alt="Floating-app" />
-                <div className="web-dev-text">
-                  <p>
-                    <h1>Web Development</h1>
-                  </p>
-                  <p>
-                    <span>
-                      Zeld Technologies aims to make all traditional
-                      bricks-and-mortal business enjoy the fascinating and
-                      amazing opportunities of running businesses on the web,
-                      hence its dedication to the production of high performing
-                      and robust web applications. If you are an individual also
-                      seeking for a website for personal use, we also have you
-                      covered. Our web applications are highly secure, fast,
-                      high performing, and has the potential to make you achieve
-                      whatever goal you have that requires a website. We use
-                      modern web development technologies to make sure your web
-                      app catches up with time. With Zeld, you can be rest
-                      assured you are getting the best.
-                    </span>
-                  </p>
-                </div>
-                <img src={webDev} alt="Floating-mobile" />
-              </div>
-              <div className={`${servicesHeader.floatingImgStyles}`}>
-                <div className="mobile-dev-text">
-                  <p>
-                    <h1>Mobile Application Development</h1>
-                  </p>
-                  <p>
-                    <span>
-                      The increasing use of mobile devices globally informs of
-                      the need for robust mobile applications. Reach a larger
-                      audience with your business or whatever it may be with a
-                      mobile application that serves no purpose than what you
-                      desire. With the use of modern technologies, Zeld
-                      Technologies has the capabilities to get a mobile
-                      application that serves the right purpose. Our clients
-                      never hide their excitement and appreciation when make for
-                      them what they want.
-                      <span>Be Our Next Happy Client</span>
-                    </span>
-                  </p>
-                </div>
+          <div className={`{${servicesHeader.flexCol}} gap-10 mt-10`}>
+            {/*A section that introduces what we do briefly.*/}
+            <p className={`${servicesHeader.largeText}`}>Our Work</p>
+            <div className={`${servicesHeader.floatingImgStyles}`}>
+              <div>
                 <img
-                  src={mobileDev}
-                  alt="A floating image showing our work as mobile app developers"
+                  src={uiCoder}
+                  alt="Floating-app"
+                  className={`${servicesHeader.floatingImg}`}
                 />
-                <div className="ui/ux-text">
-                  <p>
-                    <h1>UI/UX Design</h1>
-                  </p>
-                  <p>
-                    <span>
-                      Looking for a powerful design? Zeld Technologies' team of
-                      UI/UX designers have you covered. Get our amazing designs,
-                      flyers, posters, business cards, and whatever design you
-                      may need, all from Zeld.
-                    </span>
-                  </p>
-                </div>
+              </div>
+              <div className={`${servicesHeader.centerText}`}>
+                <p>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    Web Development
+                  </h1>
+                </p>
+                <p className={`${servicesHeader.paraStyle}`}>
+                  <span className={`${servicesHeader.smallText}`}>
+                    Zeld Technologies aims to make all traditional
+                    bricks-and-mortal business enjoy the fascinating and amazing
+                    opportunities of running businesses on the web, hence its
+                    dedication to the production of high performing and robust
+                    web applications. Our web applications are highly secure,
+                    fast, high performing, and has the potential to make you
+                    achieve whatever goal you have that requires a website.
+                  </span>
+                </p>
+              </div>
+              <div>
+                <img
+                  src={webDev}
+                  alt="Floating-mobile"
+                  className={`${servicesHeader.floatingImg} transform rotate-[10deg]`}
+                />
               </div>
             </div>
-            <div className="sales">
+            <div className={`${servicesHeader.floatingImgStyles}`}>
+              <div className={`${servicesHeader.centerText}`}>
+                <p>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    Mobile Application Development
+                  </h1>
+                </p>
+                <p className={`${servicesHeader.paraStyle}`}>
+                  <span>
+                    The increasing use of mobile devices globally informs of the
+                    need for robust mobile applications. Reach a larger audience
+                    with your business or whatever it may be with a mobile
+                    application that serves no purpose than what you desire.
+                    <span>Be Our Next Happy Client</span>
+                  </span>
+                </p>
+              </div>
+              <img
+                src={mobileDev}
+                alt="A floating image showing our work as mobile app developers"
+                className={`${servicesHeader.floatingImg}`}
+              />
+              <div className={`${servicesHeader.centerText}`}>
+                <p>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    UI/UX Design
+                  </h1>
+                </p>
+                <p className={`${servicesHeader.paraStyle}`}>
+                  <span>
+                    Looking for a powerful design? Zeld Technologies' team of
+                    UI/UX designers have you covered. Get our amazing designs,
+                    flyers, posters, business cards, and whatever design you may
+                    need, all from Zeld.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div>
               <p>
                 <span>
                   Wait... Want an electronic device to buy as well, we also deal
@@ -194,16 +202,19 @@ const Services: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className={`${servicesHeader.workStyles} how-we-work`}>
-            <div>
+          <div className={`${servicesHeader.workStyles} mt-10`}>
+            <div className={`${servicesHeader.workStylesHeader}`}>
               <p>How We Work</p>
-              <p>Small teams of dedicated and honest team players</p>
+              <p className={`${servicesHeader.largeText}`}>
+                Small teams of dedicated and honest team players.
+              </p>
             </div>
             <img
               src={webDesign}
               alt="An image of a team leader showing our team structure"
+              className={`${servicesHeader.workStylesImg}`}
             />
-            <p>
+            <p className={`${servicesHeader.paraStyle}`}>
               <span>
                 We believe in breaking down complex problems into smaller ones
                 for a better solution. We break down our developers into smaller
@@ -217,18 +228,20 @@ const Services: React.FC = () => {
                 customer acquisition.
               </span>
             </p>
-            <div>
+            <div className={`${servicesHeader.buttonStart}`}>
               <Button />
             </div>
           </div>
-          <div className="what we really do">
-            <p>Our Core Skills</p>
+          <div className={`${servicesHeader.centerSmallScreen} max-lg:mt-10`}>
+            <p className={`${servicesHeader.largeText}`}>Our Core Skills</p>
             <div className={`${servicesHeader.coreServices}`}>
-              <div className="create-ideas">
+              <div className={`${servicesHeader.flexCol}`}>
                 <p>
-                  <h1>Idea Creation</h1>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    Idea Creation
+                  </h1>
                 </p>
-                <p>
+                <p className={`${servicesHeader.paraStyle}`}>
                   <span>
                     Zeld Technologies is endowed with highly skilled team
                     players who are innovative in idea creation and the
@@ -239,15 +252,27 @@ const Services: React.FC = () => {
                   </span>
                 </p>
               </div>
-              <img src={ideaImg} alt="An image of idea creation." />
+              <div>
+                <img
+                  src={ideaImg}
+                  alt="An image of idea creation."
+                  className={`${servicesHeader.solidImg}`}
+                />
+              </div>
             </div>
-            <div className={`${servicesHeader.coreServices}`}>
-              <img src={coding} alt="An image of a programmer coding." />
-              <div className="building-products">
+            <div className={`${servicesHeader.coreServices} mt-8`}>
+              <img
+                src={coding}
+                alt="An image of a programmer coding."
+                className={`${servicesHeader.solidImg}`}
+              />
+              <div className={`${servicesHeader.flexCol}`}>
                 <p>
-                  <h1>Building Products</h1>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    Building Products
+                  </h1>
                 </p>
-                <p>
+                <p className={`${servicesHeader.paraStyle}`}>
                   <span>
                     We build upon the philosophy that great products require
                     precision, dexterity and all-hands-on-deck mentality. Our
@@ -258,50 +283,59 @@ const Services: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className={`${servicesHeader.coreServices}`}>
-              <div className="scale-business">
+            <div className={`${servicesHeader.coreServices} mt-8`}>
+              <div className={`${servicesHeader.flexCol}`}>
                 <p>
-                  <h1>Scale Business</h1>
+                  <h1 className={`${servicesHeader.mediumText}`}>
+                    Scale Business
+                  </h1>
                 </p>
-                <p>
+                <p className={`${servicesHeader.paraStyle}`}>
                   <span>
                     We pride ourselves on our branded approach to transforming
                     ideas into businesses primed for success. Following the
                     Design Sprint principles, we make sure to understand
                     whatever needs you have, and then employ critical thinking
                     and analytical skills through team work to find a solution
-                    to whatever the problem may be.There is therefore the assurance
-                    that our clients get nothing but the best from Zeld because
-                    they of course deserve nothing but the best.
+                    to whatever the problem may be.There is therefore the
+                    assurance that our clients get nothing but the best from
+                    Zeld because they of course deserve nothing but the best.
                   </span>
                 </p>
               </div>
               <img
                 src={scaleBusiness}
                 alt="An image of a team of developers."
+                className={`${servicesHeader.solidImg}`}
               />
             </div>
           </div>
-          <div className={`concluding-remarks ${servicesHeader.workStyles}`}>
-            <div className={`${servicesHeader.coreServices}`}>
-              <div>
-                <p>
-                  <h1>Ready to get Started? </h1>
-                </p>
-                <p>
-                  <span>
-                    Apparently we had reached a great height in the atmosphere,
-                    for the sky was dead black, and the stars had ceased to
-                    twinkle, nonetheless, we are forever available to our
-                    cherished clients. We look forward to working with you.
-                  </span>
-                </p>
+          <div
+            className={`${servicesHeader.coreServices} mt-14 ${servicesHeader.centerSmallScreen}`}
+          >
+            <div className={`${servicesHeader.flexCol}`}>
+              <p>
+                <h1 className={`${servicesHeader.mediumText}`}>
+                  Ready to get Started?
+                </h1>
+              </p>
+              <p className={`${servicesHeader.paraStyle}`}>
+                <span>
+                  Apparently we had reached a great height in the atmosphere,
+                  for the sky was dead black, and the stars had ceased to
+                  twinkle, nonetheless, we are forever available to our
+                  cherished clients. We look forward to working with you.
+                </span>
+              </p>
+              <div className={`${servicesHeader.buttonStart}`}>
+                <Button />
               </div>
-              <img src={customerImg} alt="An image of a man waving." />
             </div>
-            <div>
-              <Button />
-            </div>
+            <img
+              src={customerImg}
+              alt="An image of a man waving."
+              className={`${servicesHeader.solidImg}`}
+            />
           </div>
         </main>
         <footer>
