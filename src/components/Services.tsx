@@ -118,7 +118,7 @@ const Services: React.FC = () => {
           <div className={`{${servicesHeader.flexCol}} gap-10 mt-10`}>
             {/*A section that introduces what we do briefly.*/}
             <p className={`${servicesHeader.largeText}`}>Our Work</p>
-            <div className={`${servicesHeader.floatingImgStyles}`}>
+            <div className={`${servicesHeader.floatingImgStyles} mb-10`}>
               <div>
                 <img
                   src={uiCoder}
@@ -148,7 +148,7 @@ const Services: React.FC = () => {
                 <img
                   src={webDev}
                   alt="Floating-mobile"
-                  className={`${servicesHeader.floatingImg} transform rotate-[10deg]`}
+                  className={`${servicesHeader.floatingImg}`}
                 />
               </div>
             </div>
@@ -183,15 +183,14 @@ const Services: React.FC = () => {
                 <p className={`${servicesHeader.paraStyle}`}>
                   <span>
                     Looking for a powerful design? Zeld Technologies' team of
-                    UI/UX designers have you covered. Get our amazing designs,
+                    UI/UX designers have you covered. Get our amazing designs ranging from
                     flyers, posters, business cards, and whatever design you may
                     need, all from Zeld.
                   </span>
                 </p>
               </div>
             </div>
-
-            <div>
+            <div className={`mt-10 flex justify-center text-center items-center`}>
               <p>
                 <span>
                   Wait... Want an electronic device to buy as well, we also deal

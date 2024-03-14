@@ -11,7 +11,6 @@ export interface servicesHeaderStyles {
   workStylesImg: string;
   solidImg: string;
   buttonStart: string;
-  smallText: string;
   largeText: string;
   mediumText: string;
   centerSmallScreen: string;
