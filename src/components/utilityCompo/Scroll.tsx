@@ -8,7 +8,7 @@ const Scroll: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user is close to the bottom of the page
-      if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+      if (window.scrollY + window.innerHeight >= document.body.scrollHeight - 50) {
         setIsAtBottom(!isAtBottom);
       } else {
         setIsAtBottom(false);

@@ -14,4 +14,5 @@ export interface servicesHeaderStyles {
   largeText: string;
   mediumText: string;
   centerSmallScreen: string;
+  smallText: string;
 }

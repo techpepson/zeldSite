@@ -13,7 +13,8 @@ export const servicesHeader: servicesHeaderStyles = {
   centerText: `flex flex-col items-center gap-3`,
   paraStyle: `text-justify max-w-[50ch] max-[1280px]:max-w-[40ch]`,
   buttonStart: `flex justify-start`,
-  mediumText: `lg:text-2xl max-sm:xl max-lg:xl`,
+  mediumText: `sm:text-lg md:text-xl lg:text-2xl`,
+  smallText: `max-md:text-md lg:text-md`,
   largeText: `lg:text-2xl max-sm:text-xl max-lg:text-xl`,
   centerSmallScreen: `max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center`,
 };

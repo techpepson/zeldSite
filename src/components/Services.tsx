@@ -160,7 +160,7 @@ const Services: React.FC = () => {
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
-                  <span>
+                  <span className={`${servicesHeader.smallText}`}>
                     The increasing use of mobile devices globally informs of the
                     need for robust mobile applications. Reach a larger audience
                     with your business or whatever it may be with a mobile
@@ -181,7 +181,7 @@ const Services: React.FC = () => {
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
-                  <span>
+                  <span className={`${servicesHeader.smallText} tracking-tighter`}>
                     Looking for a powerful design? Zeld Technologies' team of
                     UI/UX designers have you covered. Get our amazing designs ranging from
                     flyers, posters, business cards, and whatever design you may
@@ -192,7 +192,7 @@ const Services: React.FC = () => {
             </div>
             <div className={`mt-10 flex justify-center text-center items-center`}>
               <p>
-                <span>
+                <span className={`${servicesHeader.smallText}`}>
                   Wait... Want an electronic device to buy as well, we also deal
                   in high quality electronic devices from high quality and
                   highly recognized brands like Hp, Dell, Sony, among other
@@ -214,7 +214,7 @@ const Services: React.FC = () => {
               className={`${servicesHeader.workStylesImg}`}
             />
             <p className={`${servicesHeader.paraStyle}`}>
-              <span>
+              <span className={`${servicesHeader.smallText}`}>
                 We believe in breaking down complex problems into smaller ones
                 for a better solution. We break down our developers into smaller
                 teams comprising of UI/UX designers, product, project and QA
@@ -241,7 +241,7 @@ const Services: React.FC = () => {
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
-                  <span>
+                  <span className={`${servicesHeader.smallText}`}>
                     Zeld Technologies is endowed with highly skilled team
                     players who are innovative in idea creation and the
                     realization of these ideas. Have you ever thought about
@@ -272,7 +272,7 @@ const Services: React.FC = () => {
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
-                  <span>
+                  <span className={`${servicesHeader.smallText}`}>
                     We build upon the philosophy that great products require
                     precision, dexterity and all-hands-on-deck mentality. Our
                     keen sense of emerging technologies and business acumen
@@ -290,7 +290,7 @@ const Services: React.FC = () => {
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
-                  <span>
+                  <span className={`${servicesHeader.smallText}`}>
                     We pride ourselves on our branded approach to transforming
                     ideas into businesses primed for success. Following the
                     Design Sprint principles, we make sure to understand
@@ -319,7 +319,7 @@ const Services: React.FC = () => {
                 </h1>
               </p>
               <p className={`${servicesHeader.paraStyle}`}>
-                <span>
+                <span className={`${servicesHeader.smallText}`}>
                   Apparently we had reached a great height in the atmosphere,
                   for the sky was dead black, and the stars had ceased to
                   twinkle, nonetheless, we are forever available to our
