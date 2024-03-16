@@ -103,7 +103,7 @@ const LandPage: React.FC = () => {
                   className={`${headerStyles.secondColors} second-spread`}
                 ></div>
               </div>
-              {landImages.map((image, index) => (
+              {landImages.map((image:string, index:string) => (
                 <Intersection>
                   <img
                     src={image.src}
