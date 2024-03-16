@@ -19,6 +19,6 @@ export const servicesHeader: servicesHeaderStyles = {
   centerSmallScreen: `max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center`,
   lightBg: `text-slate-950`,
   darkBg: `text-white font-bold`,
-  uniqueText: `text-green-500`,
+  uniqueText: `text-blue-900`,
   servicesSpread: `servicesSpread w-[90%] h-[60%] absolute top-5 rounded-full right-0`,
 };

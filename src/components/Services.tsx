@@ -146,13 +146,13 @@ const Services: React.FC = () => {
                   className={`${
                     selectToggleMode
                       ? servicesHeader.uniqueText
-                      : "text-blue-500"
+                      : "text-green-900"
                   }`}
                 >
-                  Our Work
+                  Our Core Services
                 </span>
               </p>
-              <div className={`${servicesHeader.floatingImgStyles} mb-10`}>
+              <div className={`${servicesHeader.floatingImgStyles} mb-10 mt-10`}>
                 <div className="relative flex">
                   <div className={`${servicesHeader.servicesSpread}`}></div>
                   <div className={`${servicesHeader.servicesSpread}`}></div>
@@ -295,7 +295,7 @@ const Services: React.FC = () => {
                       selectToggleMode
                         ? servicesHeader.darkBg
                         : servicesHeader.lightBg
-                    }`}
+                    } ${selectToggleMode ? "text-blue-800" : "text-green-900"}`}
                   >
                     Wait... Want an electronic device to buy as well, we also
                     deal in high quality electronic devices from high quality
@@ -318,7 +318,7 @@ const Services: React.FC = () => {
                     className={`${
                       selectToggleMode
                         ? servicesHeader.uniqueText
-                        : "text-blue-500"
+                        : "text-green-700"
                     }`}
                   >
                     How We Work
@@ -374,20 +374,22 @@ const Services: React.FC = () => {
                     ? servicesHeader.darkBg
                     : servicesHeader.lightBg
                 } ${
-                  selectToggleMode ? servicesHeader.uniqueText : "text-blue-500 opacit"
+                  selectToggleMode
+                    ? servicesHeader.uniqueText
+                    : "text-blue-500 bg-opacity-45"
                 }`}
               >
                 <span
                   className={`${
                     selectToggleMode
                       ? servicesHeader.uniqueText
-                      : "text-blue-500"
+                      : "text-green-900"
                   }`}
                 >
                   Our Core Skills
                 </span>
               </p>
-              <div className={`${servicesHeader.coreServices}`}>
+              <div className={`${servicesHeader.coreServices} mt-10`}>
                 <div className={`${servicesHeader.flexCol}`}>
                   <p>
                     <h1
@@ -531,7 +533,15 @@ const Services: React.FC = () => {
                   }`}
                 >
                   <h1 className={`${servicesHeader.mediumText}`}>
-                    Ready to get Started?
+                    <span
+                      className={`${
+                        selectToggleMode
+                          ? servicesHeader.uniqueText
+                          : "text-green-900"
+                      }`}
+                    >
+                      Ready to get Started?
+                    </span>
                   </h1>
                 </p>
                 <p className={`${servicesHeader.paraStyle}`}>
