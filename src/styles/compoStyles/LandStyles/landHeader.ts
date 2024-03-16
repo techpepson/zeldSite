@@ -9,7 +9,7 @@ import {
   saleImg,
   barGraph,
   commandPrompt,
-} from "../../../../public/LandImg/landImg";
+} from "../../../assets/landImg";
 
 export const headerStyles: headerTypes = {
   logoStyles: `flex flex-row text-2xl font-normal`,

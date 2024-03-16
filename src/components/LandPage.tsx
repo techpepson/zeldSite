@@ -16,12 +16,7 @@ import {
   headerStyles,
   landPageStyles,
 } from "../styles/compoStyles/LandStyles/landHeader";
-import {
-  html,
-  codeBug,
-  securityImg,
-  credibleImg,
-} from "../../public/LandImg/landImg";
+import { html, codeBug, securityImg, credibleImg } from "../assets/landImg";
 
 const LandPage: React.FC = () => {
   const selectToggleMode = useSelector(
@@ -31,15 +26,14 @@ const LandPage: React.FC = () => {
     <>
       <div
         className={`${
-          selectToggleMode ? "bg-[#08081d]" : "light-background"
-        } transition-colors duration-[0.3s] overflow-x-hidden`}
+          selectToggleMode ? "dark-bg" : "light-background"
+        } transition-colors duration - [0.5s] overflow-x-hidden`}
       >
         <Header />
-        <div
-          className={`${headerStyles.centerBody} ${
+        <div className={`${headerStyles.centerBody}`}>
+          {/* ${
             selectToggleMode ? "bg-img background__color" : "light-background"
-          } `}
-        >
+          }  */}
           {/*Beginning of the main body of the page*/}
           <main>
             <div className="mt-10 relative">
@@ -101,7 +95,9 @@ const LandPage: React.FC = () => {
             <div className={`${landPageStyles.landWorks} select-none relative`}>
               <div className="flex flex-wrap">
                 <div
-                  className={`${headerStyles.spreadColors} first-spread`}
+                  className={`${headerStyles.spreadColors} ${
+                    selectToggleMode ? "first-spread" : ""
+                  } `}
                 ></div>
                 <div
                   className={`${headerStyles.secondColors} second-spread`}
@@ -307,7 +303,7 @@ const LandPage: React.FC = () => {
                   <span>
                     Zeld greatly has customers at heart and we not only run the
                     company, but constantly take the concerns of our clients.
-                    You can logde complaints, make suggestions as well contact
+                    You can lodge complaints, make suggestions as well contact
                     customer support to get all your issues addressed.
                     <span>
                       <a href="#">Support</a>

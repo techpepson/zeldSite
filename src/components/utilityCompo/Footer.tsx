@@ -3,12 +3,7 @@ import { headerStyles } from "../../styles/compoStyles/LandStyles/landHeader";
 import "../../styles/utilityStyles/landPageStyles.css";
 import "../../index.css";
 import { Link } from "react-router-dom";
-import {
-  xap,
-  xicon,
-  instagram,
-  linkedin,
-} from "../../../public/LandImg/landImg";
+import { xap, xicon, instagram, linkedin } from "../../assets/landImg";
 import Copyright from "./Copyright";
 
 /*This is the footer section of the site*/

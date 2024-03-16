@@ -71,16 +71,24 @@
   mix-blend-mode: multiply;
 }
 
+.dark-bg {
+  background-image: linear-gradient(180deg, #130101, rgb(4, 10, 4));
+}
+
 /*Spreading background colors*/
 
 .first-spread {
   background-image: linear-gradient(180deg, #5c0feb, #cf0d0d);
-  filter: blur(200px);
+  -webkit-filter: blur(300px);
+  filter: blur(300px);
+  animation: oscillate-animation ease-in-out 0.5s infinite;
 }
 
 .second-spread {
   background-image: linear-gradient(360deg, #e11d48, #1e40af, #eab308);
-  filter: blur(200px);
+  -webkit-filter: blur(300px);
+  filter: blur(300px);
+  animation: oscillate-animation ease-in-out 0.5s infinite;
 }
 p,
 span {
@@ -92,7 +100,20 @@ span {
 }
 
 .light-background {
-  background-image: white;
+  background-image: linear-gradient(
+    360deg,
+    rgb(248, 236, 236),
+    rgb(220, 220, 240)
+  );
+}
+
+.button-hover:active::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
+  height: 3px;
+  top: 100%;
+  justify-content: center;
 }
 
 .button-hover:hover::before {
@@ -105,14 +126,6 @@ span {
   top: 100%;
   animation: underline ease-in-out 0.3s;
 }
-.button-hover:active::before {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
-  height: 3px;
-  top: 100%;
-  justify-content: center;
-}
 
 @keyframes underline {
   0% {
@@ -122,5 +135,23 @@ span {
   100% {
     width: 100%;
     transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes oscillate-animation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate3D(-360deg);
+  }
+}
+
+@keyframes oscillate-animation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate3D(-360deg);
   }
 }
