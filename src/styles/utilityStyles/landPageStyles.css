@@ -5,153 +5,154 @@
 /*This is the styling for the colors of the page.*/
 
 :root {
-  --text-color: #021225;
-  --text-size: 5rem;
+    --text-color: #021225;
+    --text-size: 5rem;
 }
 
 .text__blue-pink {
-  background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .text__blue-fuchisa {
-  background-image: linear-gradient(360deg, #d946ef, #2e1065, #db2777);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(360deg, #d946ef, #2e1065, #db2777);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .button__background {
-  background-image: linear-gradient(50deg, #0677ac, #4a044e);
-  color: #f3e8ff;
+    background-image: linear-gradient(50deg, #0677ac, #4a044e);
+    color: #f3e8ff;
 }
 
 .button__background:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .text__color {
-  color: var(--text-color);
+    color: var(--text-color);
 }
 
 .special__button {
-  background-color: #fbbf24;
+    background-color: #fbbf24;
 }
 
 .unique__text {
-  background-image: linear-gradient(30deg, #ca8a04, #082f49, red);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(30deg, #ca8a04, #082f49, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
+
 /*Styling for mix-blend of the sections of our potentials*/
+
 .mix-blend::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
-  mix-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(360deg, #1e1b4b, #ee0e73, red);
+    mix-blend-mode: multiply;
 }
+
 .mix-blends::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(30deg, #f7f5f5, #1e1b4b, #ee0e73);
-  opacity: 0.3;
-  background-position: center;
-  mix-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(30deg, #f7f5f5, #1e1b4b, #ee0e73);
+    opacity: 0.3;
+    background-position: center;
+    mix-blend-mode: multiply;
 }
 
 .dark-bg {
-  background-image: linear-gradient(180deg, #130101, rgb(4, 10, 4));
+    background-image: linear-gradient(180deg, #0a0000ef, rgb(4, 10, 4));
 }
+
 
 /*Spreading background colors*/
 
 .first-spread {
-  background-image: linear-gradient(180deg, #5c0feb, #cf0d0d);
-  -webkit-filter: blur(300px);
-  filter: blur(300px);
-  animation: oscillate-animation ease-in-out 0.5s infinite;
+    background-image: linear-gradient(180deg, #5c0feb, #cf0d0d);
+    -webkit-filter: blur(300px);
+    filter: blur(300px);
+    animation: oscillate-animation ease-in-out 0.5s infinite;
 }
 
 .second-spread {
-  background-image: linear-gradient(360deg, #e11d48, #1e40af, #eab308);
-  -webkit-filter: blur(300px);
-  filter: blur(300px);
-  animation: oscillate-animation ease-in-out 0.5s infinite;
+    background-image: linear-gradient(360deg, #e11d48, #1e40af, #eab308);
+    -webkit-filter: blur(300px);
+    filter: blur(300px);
+    animation: oscillate-animation ease-in-out 0.5s infinite;
 }
+
 p,
 span {
-  color: #94a3b8;
+    color: #94a3b8;
 }
 
 .text-uniq {
-  color: #95959b;
+    color: #95959b;
 }
 
 .light-background {
-  background-image: linear-gradient(
-    360deg,
-    rgb(248, 236, 236),
-    rgb(220, 220, 240)
-  );
+    background-image: linear-gradient( 360deg, rgb(248, 236, 236), rgb(220, 220, 240));
 }
 
 .button-hover:active::before {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
-  height: 3px;
-  top: 100%;
-  justify-content: center;
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
+    height: 3px;
+    top: 100%;
+    justify-content: center;
 }
 
 .button-hover:hover::before {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
-  width: 100%;
-  height: 3px;
-  justify-content: center;
-  top: 100%;
-  animation: underline ease-in-out 0.3s;
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(360deg, #5757fd, #421a03, #1f0101);
+    width: 100%;
+    height: 3px;
+    justify-content: center;
+    top: 100%;
+    animation: underline ease-in-out 0.3s;
 }
 
 @keyframes underline {
-  0% {
-    width: 0;
-    transform: translateX(-0%);
-  }
-  100% {
-    width: 100%;
-    transform: translateX(0%);
-  }
+    0% {
+        width: 0;
+        transform: translateX(-0%);
+    }
+    100% {
+        width: 100%;
+        transform: translateX(0%);
+    }
 }
 
 @-webkit-keyframes oscillate-animation {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate3D(-360deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate3D(-360deg);
+    }
 }
 
 @keyframes oscillate-animation {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate3D(-360deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate3D(-360deg);
+    }
 }

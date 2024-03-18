@@ -52,7 +52,7 @@ export const landPageStyles: landPageStylesInt = {
   lineBreakStyles: `max-[770px]:hidden`,
 };
 
-export const landImages: landImagesInt = [
+export const landImages: landImagesInt[] = [
   {
     image: "camera",
     src: cctv,

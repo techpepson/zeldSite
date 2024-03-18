@@ -40,7 +40,7 @@ const Services: React.FC = () => {
           <main>
             <div className="short-description-container">
               <p>
-                <h1>What We Do...</h1>
+                <h1>Our Noble Services</h1>
               </p>
               {/*A div container that contains all the short description of services*/}
               <div
